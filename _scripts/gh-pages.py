@@ -29,7 +29,7 @@ from subprocess import Popen, PIPE, CalledProcessError, check_call
 
 pages_dir = 'gh-pages'
 html_dir = '_build/html'
-pages_repo = 'git@github.com:ipython/ipython.github.com.git'
+pages_repo = 'git@github.com:scikits-image/scikits-image.github.com.git'
 
 #-----------------------------------------------------------------------------
 # Functions
@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
     # This is pretty unforgiving: we unconditionally nuke the destination
     # directory, and then copy the html tree in there
-    sh('rm -r %s/*' % pages_dir)
+    sh('rm -rf %s/*' % pages_dir)
     
     sh('cp -r %s/* %s/' % (html_dir, pages_dir))
 
@@ -109,7 +109,7 @@ if __name__ == '__main__':
         print
         print 'Most recent 3 commits:'
         sys.stdout.flush()
-        sh('git --no-pager log --oneline HEAD~3..')
+        sh('git --no-pager log --oneline -n 3')
     finally:
         cd(startdir)
 
