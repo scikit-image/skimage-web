@@ -16,7 +16,7 @@ Announcements
 - **Google Summer of Code 2011:** We are glad to announce our
   involvement in this year's Google Summer of Code project.
   Congratulations to `Pieter Holtzhausen
-  <http://pythonimaging.blogspot.com/>`__, whose is making `focused
+  <http://pythonimaging.blogspot.com/>`__, who is is making `focused
   improvements to the project
   <http://pythonimaging.blogspot.com/2011/04/gsoc2011.html>`__.
 
