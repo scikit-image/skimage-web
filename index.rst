@@ -13,6 +13,10 @@ maintainable**.  We support various computing backends, such as `NumPy
 Announcements
 ~~~~~~~~~~~~~
 
+- **SciPy2011 Sprint:** Join us for `a sprint
+  <http://conference.scipy.org/scipy2011/sprints.php>`__ at the 10th SciPy
+  conference in Austin, Texas.
+
 - **Google Summer of Code 2011:** We are glad to announce our
   involvement in this year's Google Summer of Code project.
   Congratulations to `Pieter Holtzhausen
