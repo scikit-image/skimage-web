@@ -2,20 +2,20 @@
 Download
 ~~~~~~~~
 
-Stable Releases
----------------
+Stable release
+--------------
 
 The latest stable release is available from the `Python packaging
 index <http://pypi.python.org/pypi/scikits.image>`__.  It is also
 included as part of the Enthought Python Distribution (EPD) and
 Python(x,y).
 
-Installation instructions
--------------------------
+Latest development version
+--------------------------
 
-TODO: Insert link to documentation
+Please refer to the latest
+`installation instructions </docs/dev/install.html>`__.
 
-Dependencies
-------------
+To build the development version of the scikit, you need Python, NumPy
+and Cython.
 
-TODO: Insert link to documentation

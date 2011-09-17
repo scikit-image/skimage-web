@@ -88,14 +88,17 @@ h1 {
 }
 
 h2 {
-  padding-bottom: .5em;
-  border-bottom: 1px solid {{ theme_headercolor2 }};
+  padding-bottom: 0em;
+  border-bottom: 0px solid {{ theme_headercolor2 }};
 }
 
 a.headerlink {
   visibility: hidden;
   color: #dddddd;
   padding-left: .3em;
+  
+  /* We don't need these to be displayed on our webpage. */
+  display: none;
 }
 
 h1:hover > a.headerlink,
@@ -178,11 +181,12 @@ img.logo {
 /* Content */
 div.content-wrapper {
   background-color: white;
-  padding: 1em;
+  padding-left: 1.5em;
 }
 
 div.document {
-  max-width: {{ theme_documentwidth }};
+  /* max-width: {{ theme_documentwidth }}; */
+  margin-right: 13em;
 }
 
 div.body {
@@ -191,7 +195,7 @@ div.body {
 }
 
 div.document ul {
-  margin: 1.5em;
+  margin: 1em;
   list-style-type: square;
 }
 
@@ -202,7 +206,7 @@ div.document dd {
 }
 
 div.document .section {
-  margin-top: 1.7em;
+  margin-top: 1em;
 }
 div.document .section:first-child {
   margin-top: 0px;
@@ -219,10 +223,12 @@ div.document div.highlight {
 
 div.document h2 {
   margin-top: .7em;
+  font-size: 110%;
+  font-weight: bold;
 }
 
 div.document p {
-  margin-bottom: .5em;
+  margin-bottom: .2em;
 }
 
 div.document li.toctree-l1 {
@@ -255,8 +261,10 @@ div.document ol {
 /* Sidebar */
 
 div.sphinxsidebar {
-  width: {{ theme_sidebarwidth }};
-  padding: 0 1em;
+  width: {{ theDDDsidebarwidth }};
+  padding: 0 0.5em;
+  margin-left: 1em;
+  border-left: solid 1px #DDD;
   float: right;
   font-size: .93em;
   background-color: white;
@@ -283,7 +291,7 @@ div.sphinxsidebar h4 {
   font-weight: bold;
 }
 
-div.sphinxsidebar .tile {
+div .tile {
   border: 1px solid #D1DDE2;
   border-radius: 10px;
   background-color: #E1E8EC;

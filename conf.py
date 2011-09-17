@@ -125,7 +125,7 @@ html_short_title = "scikits.image"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = "scikits_image_logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # pixels large.
