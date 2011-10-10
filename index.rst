@@ -27,6 +27,8 @@ free of restriction </docs/dev/license.html>`__.
 The package contains code that is **well tested**, **documented** and **easily
 maintainable**.
 
+Have a look at our `examples gallery </docs/dev/auto_examples>`__.
+
 .. We support various computing backends, such as `NumPy <http://numpy.scipy.org>`__ and `PyOpenCl <http://mathema.tician.de/software/pyopencl>`__.
 
 ~~~~~~~~~~~~~
