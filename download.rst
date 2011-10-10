@@ -10,6 +10,10 @@ index <http://pypi.python.org/pypi/scikits.image>`__.  It is also
 included as part of the Enthought Python Distribution (EPD) and
 Python(x,y).
 
+`Windows binaries
+<http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikits.image>`__ are
+kindly provided by Christoph Gohlke.
+
 Latest development version
 --------------------------
 
