@@ -35,6 +35,8 @@ We support various computing backends, such as `NumPy
 Announcements
 ~~~~~~~~~~~~~
 
+- **Release!** Version 0.3 10/10/2011
+
 - **Release Sprints** Stanford campus (16 September), online (18 September),
   online (24 September)
 
