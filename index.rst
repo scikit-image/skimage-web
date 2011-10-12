@@ -1,3 +1,6 @@
+.. meta::
+   :google-site-verification: WiJmSOQVA_wT4Zdi1rt3iWNN_EZTcjV6d5GrLHpKVZc
+
 .. raw:: html
 
    <style type="text/css">
