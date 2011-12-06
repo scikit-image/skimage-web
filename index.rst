@@ -12,14 +12,14 @@
    </style>
 
 ====================================================
-scikits.image: An image processing toolbox for SciPy
+scikits-image: An image processing toolbox for SciPy
 ====================================================
 
 .. raw:: html
 
    <div class="tile">
 
-``scikits.image`` is a collection of algorithms for
+``scikits-image`` is a collection of algorithms for
 image processing and computer vision.  It is available `free of charge and
 free of restriction </docs/dev/license.html>`__.
 
