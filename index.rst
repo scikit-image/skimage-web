@@ -38,6 +38,10 @@ Have a look at our `examples gallery </docs/dev/auto_examples>`__.
 Announcements
 ~~~~~~~~~~~~~
 
+- **SciPy India Sprints** 08/12/2011
+
+- **Release!** Version 0.4 03/12/2011
+
 - **Release!** Version 0.3 10/10/2011
 
 - **Release Sprints** Stanford campus (16 September), online (18 September),
