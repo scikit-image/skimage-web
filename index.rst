@@ -1,3 +1,6 @@
+.. meta::
+   :google-site-verification: WiJmSOQVA_wT4Zdi1rt3iWNN_EZTcjV6d5GrLHpKVZc
+
 .. raw:: html
 
    <style type="text/css">
@@ -9,14 +12,14 @@
    </style>
 
 ====================================================
-scikits.image: An image processing toolbox for SciPy
+scikits-image: An image processing toolbox for SciPy
 ====================================================
 
 .. raw:: html
 
    <div class="tile">
 
-``scikits.image`` is a collection of algorithms for
+``scikits-image`` is a collection of algorithms for
 image processing and computer vision.  It is available `free of charge and
 free of restriction </docs/dev/license.html>`__.
 
@@ -34,6 +37,10 @@ Have a look at our `examples gallery </docs/dev/auto_examples>`__.
 ~~~~~~~~~~~~~
 Announcements
 ~~~~~~~~~~~~~
+
+- **SciPy India Sprints** 08/12/2011
+
+- **Release!** Version 0.4 03/12/2011
 
 - **Release!** Version 0.3 10/10/2011
 
