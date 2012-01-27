@@ -11,28 +11,37 @@
      }
    </style>
 
+   <script type="text/javascript"
+           src="http://scikits-image.org/docs/dev/_static/random.js"></script>
+
 ====================================================
 scikits-image: An image processing toolbox for SciPy
 ====================================================
 
 .. raw:: html
 
-   <div class="tile">
+   <script type="text/javascript">
+     insert_gallery();
+   </script>
 
-``scikits-image`` is a collection of algorithms for
-image processing and computer vision.  It is available `free of charge and
-free of restriction </docs/dev/license.html>`__.
+   <div class="sideline">
+
+``scikits-image`` is a collection of algorithms for image processing.  It is
+available `free of charge and free of restriction </docs/dev/license.html>`__.
+We pride ourselves on high-quality, peer-reviewed code, written by an active
+`community of volunteers
+<https://www.ohloh.net/p/scikits-image/contributors>`__.
 
 .. raw:: html
 
    </div>
 
-The package contains code that is **well tested**, **documented** and **easily
-maintainable**.
+To see more examples of how to use ``scikits-image``, please visit our
+`examples gallery </docs/dev/auto_examples>`__.
 
-Have a look at our `examples gallery </docs/dev/auto_examples>`__.
+.. raw:: html
 
-.. We support various computing backends, such as `NumPy <http://numpy.scipy.org>`__ and `PyOpenCl <http://mathema.tician.de/software/pyopencl>`__.
+   <div style="clear: left;"></div>
 
 ~~~~~~~~~~~~~
 Announcements
@@ -45,18 +54,15 @@ Announcements
 - **Release!** Version 0.3 10/10/2011
 
 - **Release Sprints** Stanford campus (16 September), online (18 September),
-  online (24 September)
+  online (24 September) 2011
 
 - **EuroSciPy Sprint:** at ENS Paris, 29 September 2011
 
-- **SciPy2011 Sprint:** Join us for `a sprint
-  <http://conference.scipy.org/scipy2011/sprints.php>`__ at the 10th SciPy
-  conference in Austin, Texas.
+~~~~~~~~~~
+Developers
+~~~~~~~~~~
 
-- **Google Summer of Code 2011:** We are glad to announce our
-  involvement in this year's Google Summer of Code project.
-  Congratulations to `Pieter Holtzhausen
-  <http://pythonimaging.blogspot.com/>`__, who is is making `focused
-  improvements to the project
-  <http://pythonimaging.blogspot.com/2011/04/gsoc2011.html>`__.
-
+ - `Pull requests
+   <https://github.com/scikits-image/scikits-image/pulls>`__
+ - `Bug reports <https://github.com/scikits-image/scikits-image/issues>`__
+ - `Ohloh summary <http://ohloh.net/p/scikits-image>`__

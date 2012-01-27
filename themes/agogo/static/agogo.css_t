@@ -489,3 +489,32 @@ div.viewcode-block:target {
     border-top: 1px solid #ac9;
     border-bottom: 1px solid #ac9;
 }
+
+div.gallery {
+}
+
+div.gallery_image {
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.75em;
+    padding: 1em;
+
+    border: 1px solid #D1DDE2;
+    border-radius: 10px;
+    background-color: #E1E8EC;
+}
+
+div .sideline {
+  font-size: 120%;
+
+  font-style: italic;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 1em 0;
+}
+
+#ohloh-use {
+   float: left;
+}
