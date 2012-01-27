@@ -514,3 +514,7 @@ div .sideline {
   padding-bottom: 1em;
   margin: 1em 0;
 }
+
+#ohloh-use {
+   float: left;
+}
