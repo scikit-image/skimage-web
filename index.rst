@@ -35,9 +35,34 @@ We pride ourselves on high-quality, peer-reviewed code, written by an active
 .. raw:: html
 
    </div>
+   <br/>
 
-To see more examples of how to use ``scikits-image``, please visit our
-`examples gallery </docs/dev/auto_examples>`__.
+~~~~~~~~~~~
+Quick Start
+~~~~~~~~~~~
+
+Getting started is easy. For example, if you want to open an image, calculate
+a threshold (using Otsu's method), and threshold the image, you just do the
+following::
+
+   from skimage import io
+   import skimage.filter as imfilt
+
+   image = io.imread('some_image.jpg')
+   thresh = imfilt.threshold_otsu(image)
+   binary = image > thresh
+
+And ``scikits-image`` uses normal `numpy
+<http://docs.scipy.org/doc/numpy/user/whatisnumpy.html>`__ arrays so you can
+easily combine this with your favorite scientific tools::
+
+   import matplotlib.pyplot as plt
+   plt.imshow(binary)
+
+Have a look at our `gallery </docs/dev/auto_examples>`__ for more examples. Not
+all algorithms have examples in the gallery, so check out the `API reference
+</docs/dev/api/api.html>`__ for a more complete list.
+
 
 .. raw:: html
 
