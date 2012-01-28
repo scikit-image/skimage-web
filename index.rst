@@ -35,38 +35,39 @@ We pride ourselves on high-quality, peer-reviewed code, written by an active
 .. raw:: html
 
    </div>
-   <br/>
+   <div style="clear: left;"></div>
 
-~~~~~~~~~~~
-Quick Start
-~~~~~~~~~~~
-
-Getting started is easy. For example, if you want to open an image, calculate
-a threshold (using Otsu's method), and threshold the image, you just do the
-following::
-
-   from skimage import io
-   import skimage.filter as imfilt
-
-   image = io.imread('some_image.jpg')
-   thresh = imfilt.threshold_otsu(image)
-   binary = image > thresh
-
-And ``scikits-image`` uses normal `numpy
-<http://docs.scipy.org/doc/numpy/user/whatisnumpy.html>`__ arrays so you can
-easily combine this with your favorite scientific tools::
-
-   import matplotlib.pyplot as plt
-   plt.imshow(binary)
-
-Have a look at our `gallery </docs/dev/auto_examples>`__ for more examples. Not
-all algorithms have examples in the gallery, so check out the `API reference
-</docs/dev/api/api.html>`__ for a more complete list.
-
+~~~~~~~~~~~~~~~
+Getting Started
+~~~~~~~~~~~~~~~
 
 .. raw:: html
 
-   <div style="clear: left;"></div>
+   <div style="float: left; padding-right: 2em;">
+
+Filtering an image with ``scikits-image`` is easy!
+
+::
+
+   from skimage import data, io, filter
+
+   image = data.coins() # or any NumPy array!
+   edges = filter.sobel(image)
+   io.imshow(edges)
+
+For more examples, please visit our `gallery </docs/dev/auto_examples>`__.
+
+.. raw:: html
+
+   </div>
+
+   <div class="gallery_image" style="margin-top: 0; margin-bottom: 1em;">
+   <img src="_static/coins_small.png"/>
+   <img src="_static/sobel_coins_small.png"/>
+   </div>
+
+   <div style="clear: left;"/>
+
 
 ~~~~~~~~~~~~~
 Announcements
