@@ -506,8 +506,8 @@ div.gallery_image {
 
 div .sideline {
   font-size: 120%;
-
   font-style: italic;
+
   padding-left: 4em;
   padding-right: 4em;
   padding-top: 1em;
