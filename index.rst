@@ -35,13 +35,39 @@ We pride ourselves on high-quality, peer-reviewed code, written by an active
 .. raw:: html
 
    </div>
+   <div style="clear: left;"></div>
 
-To see more examples of how to use ``scikits-image``, please visit our
-`examples gallery </docs/dev/auto_examples>`__.
+~~~~~~~~~~~~~~~
+Getting Started
+~~~~~~~~~~~~~~~
 
 .. raw:: html
 
-   <div style="clear: left;"></div>
+   <div style="float: left; padding-right: 2em;">
+
+Filtering an image with ``scikits-image`` is easy!
+
+::
+
+   from skimage import data, io, filter
+
+   image = data.coins() # or any NumPy array!
+   edges = filter.sobel(image)
+   io.imshow(edges)
+
+For more examples, please visit our `gallery </docs/dev/auto_examples>`__.
+
+.. raw:: html
+
+   </div>
+
+   <div class="gallery_image" style="margin-top: 0; margin-bottom: 1em;">
+   <img src="_static/coins_small.png"/>
+   <img src="_static/sobel_coins_small.png"/>
+   </div>
+
+   <div style="clear: left;"/>
+
 
 ~~~~~~~~~~~~~
 Announcements
