@@ -7,6 +7,9 @@ Stable release
 
 Windows
 ```````
+
+.. !! Also update user guide !!
+
 `Windows binaries <http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikits.image>`__
 are kindly provided by Christoph Gohlke.
 
@@ -30,10 +33,6 @@ or
 ::
 
   easy_install -U scikits-image
-
-`Windows binaries
-<http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikits.image>`__ are
-kindly provided by Christoph Gohlke.
 
 Latest development version
 --------------------------
