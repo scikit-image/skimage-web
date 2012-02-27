@@ -73,6 +73,8 @@ For more examples, please visit our `gallery </docs/dev/auto_examples>`__.
 Announcements
 ~~~~~~~~~~~~~
 
+- **Release!** Version 0.5 26/02/2011
+
 - **SciPy India Sprints** 08/12/2011
 
 - **Release!** Version 0.4 03/12/2011
