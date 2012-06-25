@@ -73,18 +73,11 @@ For more examples, please visit our `gallery </docs/dev/auto_examples>`__.
 Announcements
 ~~~~~~~~~~~~~
 
-- **Release!** Version 0.5 26/02/2012
+- **Release!** Version 0.6 24/06/2012
 
-- **SciPy India Sprints** 08/12/2011
+- **SciPy 2012 Sprint**, Austin, July 2012
 
-- **Release!** Version 0.4 03/12/2011
-
-- **Release!** Version 0.3 10/10/2011
-
-- **Release Sprints** Stanford campus (16 September), online (18 September),
-  online (24 September) 2011
-
-- **EuroSciPy Sprint:** at ENS Paris, 29 September 2011
+- **EuroSciPy Sprint**, Belgium, August 2012
 
 ~~~~~~~~~~
 Developers
