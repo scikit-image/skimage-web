@@ -20,11 +20,13 @@ scikits-image: An image processing toolbox for SciPy
 
 .. raw:: html
 
-   <script type="text/javascript">
-     insert_gallery();
-   </script>
+    <div class="gallery_random">
+        <script type="text/javascript">
+            insert_gallery();
+        </script>
+    </div>
 
-   <div class="sideline">
+    <div class="sideline">
 
 ``scikits-image`` is a collection of algorithms for image processing.  It is
 available `free of charge and free of restriction </docs/dev/license.html>`__.
@@ -35,6 +37,7 @@ We pride ourselves on high-quality, peer-reviewed code, written by an active
 .. raw:: html
 
    </div>
+
    <div style="clear: left;"></div>
 
 ~~~~~~~~~~~~~~~
@@ -43,7 +46,7 @@ Getting Started
 
 .. raw:: html
 
-   <div style="float: left; padding-right: 2em;">
+   <div style="float: left; width: 45%; padding-right: 5%;">
 
 Filtering an image with ``scikits-image`` is easy!
 
@@ -61,12 +64,13 @@ For more examples, please visit our `gallery </docs/dev/auto_examples>`__.
 
    </div>
 
-   <div class="gallery_image" style="margin-top: 0; margin-bottom: 1em;">
-   <img src="_static/coins_small.png"/>
-   <img src="_static/sobel_coins_small.png"/>
+   <div class="gallery_image" style="float: right;">
+       <img src="_static/coins_small.png" style="width:150px; float:left; margin-right:10px;" />
+       <img src="_static/sobel_coins_small.png" style="width:150px; float:left;"/>
+       <div style="clear: left;"></div>
    </div>
 
-   <div style="clear: left;"/>
+   <div style="clear: left;"></div>
 
 
 ~~~~~~~~~~~~~
@@ -83,7 +87,6 @@ Announcements
 Developers
 ~~~~~~~~~~
 
- - `Pull requests
-   <https://github.com/scikits-image/scikits-image/pulls>`__
- - `Bug reports <https://github.com/scikits-image/scikits-image/issues>`__
- - `Ohloh summary <http://ohloh.net/p/scikits-image>`__
+- `Pull requests <https://github.com/scikits-image/scikits-image/pulls>`__
+- `Bug reports <https://github.com/scikits-image/scikits-image/issues>`__
+- `Ohloh summary <http://ohloh.net/p/scikits-image>`__
