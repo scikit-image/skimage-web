@@ -116,4 +116,4 @@ if __name__ == '__main__':
 
     print
     print 'Now verify the build in: %r' % pages_dir
-    print "If everything looks good, 'git push'"
+    print "If everything looks good, run 'git push' inside gh-pages/."
