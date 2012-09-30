@@ -79,6 +79,8 @@ Announcements
 
 - **EuroSciPy Sprint**, Belgium, August 2012
 
+- **Release!** Version 0.7.0 30/09/2012
+
 ~~~~~~~~~~
 Developers
 ~~~~~~~~~~
