@@ -98,12 +98,12 @@ pygments_style = 'sphinx'
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'default'
 #html_theme = 'sphinxdoc'
-html_theme = 'agogo'  # inherits from sphinxdoc and modifies it a little
+html_theme = 'scikit-image'  # inherits from sphinxdoc and modifies it a little
 
 # The style sheet to use for HTML and HTML Help pages. A file of that name
 # must exist either in Sphinx' static/ path, or in one of the custom paths
 # given in html_static_path.
-html_style = 'agogo.css'
+html_style = 'scikit-image.css'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -122,10 +122,6 @@ html_title = u"scikits-image"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 html_short_title = "scikits-image"
-
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-html_logo = "scikits_image_logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # pixels large.

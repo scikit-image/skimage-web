@@ -1,6 +1,5 @@
-~~~~~~~~
 Download
-~~~~~~~~
+========
 
 Stable release
 --------------
@@ -26,13 +25,13 @@ index <http://pypi.python.org/pypi/scikits-image>`__ using
 
 ::
 
-  pip install -U scikits-image
+    pip install -U scikits-image
 
 or
 
 ::
 
-  easy_install -U scikits-image
+    easy_install -U scikits-image
 
 Latest development version
 --------------------------
