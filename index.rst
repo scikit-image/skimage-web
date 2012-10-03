@@ -2,12 +2,12 @@
    :google-site-verification: WiJmSOQVA_wT4Zdi1rt3iWNN_EZTcjV6d5GrLHpKVZc
 
 .. title::
-    scikits-image: Image processing in Python
+    scikit-image: Image processing in Python
 
 Getting Started
 ---------------
 
-Filtering an image with ``scikits-image`` is easy!
+Filtering an image with ``scikit-image`` is easy!
 
 .. raw:: html
 
@@ -48,6 +48,6 @@ Announcements
 Developers
 ----------
 
-- `Pull requests <https://github.com/scikits-image/scikits-image/pulls>`__
-- `Bug reports <https://github.com/scikits-image/scikits-image/issues>`__
-- `Ohloh summary <http://ohloh.net/p/scikits-image>`__
+- `Pull requests <https://github.com/scikit-image/scikit-image/pulls>`__
+- `Bug reports <https://github.com/scikit-image/scikit-image/issues>`__
+- `Ohloh summary <http://ohloh.net/p/scikit-image>`__
