@@ -9,7 +9,7 @@ Windows
 
 .. !! Also update user guide !!
 
-`Windows binaries <http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikits-image>`__
+`Windows binaries <http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image>`__
 are kindly provided by Christoph Gohlke.
 
 The latest stable release is also included as part of the `Enthought Python
@@ -20,18 +20,18 @@ Distribution (EPD) <http://enthought.com/products/epd.php>`__ and `Python(x,y)
 Linux and OSX
 `````````````
 
-Scikits-image can be installed from the `Python packaging
-index <http://pypi.python.org/pypi/scikits-image>`__ using
+scikit-image can be installed from the `Python packaging
+index <http://pypi.python.org/pypi/scikit-image>`__ using
 
 ::
 
-    pip install -U scikits-image
+    pip install -U scikit-image
 
 or
 
 ::
 
-    easy_install -U scikits-image
+    easy_install -U scikit-image
 
 Latest development version
 --------------------------
