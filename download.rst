@@ -10,7 +10,7 @@ Windows
 
 .. !! Also update user guide !!
 
-`Windows binaries <http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikits-image>`__
+`Windows binaries <http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image>`__
 are kindly provided by Christoph Gohlke.
 
 The latest stable release is also included as part of the `Enthought Python
