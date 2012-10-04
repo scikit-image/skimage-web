@@ -1,35 +1,30 @@
-{%- block versions %}
-<div class="sidebarblock">
-
-<h3>{{ _('Versions') }}</h3>
-
-<div class="tile"><h4>Stable</h4>
-     0.7.0 &ndash; September&nbsp;2012<br/>
-    <a href="{{pathto('download')}}">Download</a>
+<h4 class="sidebar-box-heading">Versions</h4>
+<div class="well">
+    <strong>Stable</strong>
+    <p>0.7.0 - September 2012</p>
+    <a class="btn btn-small" href="{{ pathto('download') }}"><i class="icon-download"></i> Download</a>
+</div>
+<div class="well">
+    <strong>Development</strong>
+    <p>pre-0.8.0</p>
+    <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image"><i class="icon-download"></i> Download</a>
 </div>
 
-<div class="tile"><h4>Development</h4>
-    pre-0.8<br/>
-    <a href="https://github.com/scikits-image/scikits-image">Github</a>
+
+<div class="ohloh-use">
+    <script type="text/javascript" src="http://www.ohloh.net/p/488700/widgets/project_users_logo.js"></script>
 </div>
 
-<div id="ohloh-use" style="margin-right: 25px; margin-top: -2px;">
-  <script type="text/javascript"
-          src="http://www.ohloh.net/p/488700/widgets/project_users_logo.js">
-  </script>
+<div class="gplus-use">
+    <g:plusone size="medium" href="http://skimage.org"></g:plusone>
+    <script type="text/javascript">
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
 </div>
 
-<g:plusone size="medium" href="http://scikits-image.org"></g:plusone>
+<div class="clearfix"></div>
 
-<div style="clear: left;"></div>
-
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-
-</div>
-{%- endblock %}

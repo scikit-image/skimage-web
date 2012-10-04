@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# scikits-image-web documentation build configuration file, created by
+# scikit-image-web documentation build configuration file, created by
 # sphinx-quickstart on Sat Dec 18 17:03 2010.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,8 +41,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'scikits-image'
-copyright = u'the scikits-image development team'
+project = u'scikit-image'
+copyright = u'the scikit-image development team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -98,12 +98,12 @@ pygments_style = 'sphinx'
 # Sphinx are currently 'default' and 'sphinxdoc'.
 #html_theme = 'default'
 #html_theme = 'sphinxdoc'
-html_theme = 'agogo'  # inherits from sphinxdoc and modifies it a little
+html_theme = 'scikit-image'  # inherits from sphinxdoc and modifies it a little
 
 # The style sheet to use for HTML and HTML Help pages. A file of that name
 # must exist either in Sphinx' static/ path, or in one of the custom paths
 # given in html_static_path.
-html_style = 'agogo.css'
+html_style = 'scikit-image.css'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -118,14 +118,10 @@ html_theme_path = ['themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".ke
-html_title = u"scikits-image"
+html_title = u"scikit-image"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "scikits-image"
-
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-html_logo = "scikits_image_logo.png"
+html_short_title = "scikit-image"
 
 # The name of an image file (within the static path) to use as favicon of the
 # pixels large.
