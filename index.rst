@@ -24,7 +24,7 @@
 
    .. raw:: html
 
-      <a class="btn btn-warning" href="/download">
+      <a class="btn btn-warning clearfix" href="/download">
       <i class="icon-download icon-white"></i>Download</a>
 
 
