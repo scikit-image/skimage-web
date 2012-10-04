@@ -229,11 +229,3 @@ p.admonition-title {
     /* Should derive width from span8 */
     width: 620px;
 }
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
