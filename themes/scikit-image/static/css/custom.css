@@ -57,12 +57,14 @@ h6 {
 .gallery-random {
     float: right;
     line-height: 180px;
+    padding: 5px;
 }
 .gallery-random img {
     max-height: 180px;
 }
 
 .coins-sample {
+    float: left;
     padding: 5px;
 }
 
@@ -221,4 +223,17 @@ p.admonition-title {
 .figure .caption {
     width: 200px;
     text-align: center !important;
+}
+
+.summary-box {
+    /* Should derive width from span8 */
+    width: 620px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }

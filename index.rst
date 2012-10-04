@@ -1,39 +1,58 @@
 .. meta::
    :google-site-verification: WiJmSOQVA_wT4Zdi1rt3iWNN_EZTcjV6d5GrLHpKVZc
 
-.. title::
-    scikit-image: Image processing in Python
+.. title:: scikit-image: Image processing in Python
+
+.. container:: well hero row-fluid summary-box
+
+   .. raw:: html
+
+      <div class="gallery-random">
+        <script src="http://skimage.org/docs/dev/_static/random.js"></script>
+        <script type="text/javascript">
+          insert_gallery();
+        </script>
+      </div>
+
+      <h2>Image processing in Python</h2>
+
+   *scikit-image* is a collection of algorithms for image processing.  It
+   is available `free of charge and free of restriction
+   </docs/dev/license.html>`__.  We pride ourselves on high-quality,
+   peer-reviewed code, written by an active `community of volunteers
+   <https://www.ohloh.net/p/scikit-image/contributors>`__.
+
+   .. raw:: html
+
+      <a class="btn btn-warning" href="/download">
+      <i class="icon-download icon-white"></i>Download</a>
+
 
 Getting Started
 ---------------
 
-Filtering an image with ``scikit-image`` is easy!
+Filtering an image with ``scikit-image`` is easy!  For more examples, please
+visit our `gallery </docs/dev/auto_examples>`__.
 
-.. raw:: html
+.. container:: row-fluid
 
-   <div class="row-fluid">
-        <div class="span6">
+   .. container:: span6
 
-::
+      ::
 
-   from skimage import data, io, filter
+        from skimage import data, io, filter
 
-   image = data.coins() # or any NumPy array!
-   edges = filter.sobel(image)
-   io.imshow(edges)
+        image = data.coins() # or any NumPy array!
+        edges = filter.sobel(image)
+        io.imshow(edges)
 
-For more examples, please visit our `gallery </docs/dev/auto_examples>`__.
+   .. container:: well span6
 
-.. raw:: html
+      .. image:: _static/coins-small.png
+         :class: coins-sample span6
 
-        </div>
-        <div class="well span3 coins-sample">
-            <img src="_static/coins-small.png">
-        </div>
-        <div class="well span3 coins-sample">
-            <img src="_static/sobel-coins-small.png">
-        </div>
-    </div>
+      .. image:: _static/sobel-coins-small.png
+         :class: coins-sample span6
 
 
 Announcements
