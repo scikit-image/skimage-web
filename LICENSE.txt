@@ -1,1 +1,0 @@
-This web site was derived from http://github.com/ipython/ipython-website
