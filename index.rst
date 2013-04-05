@@ -58,10 +58,10 @@ visit our `gallery </docs/dev/auto_examples>`__.
 Announcements
 -------------
 
+- **Release!** Version 0.8.0 04/03/2013
 - **Release!** Version 0.7.0 30/09/2012
 - **EuroSciPy Sprint**, Belgium, August 2012
 - **SciPy 2012 Sprint**, Austin, July 2012
-- **Release!** Version 0.6 24/06/2012
 
 
 Developers
