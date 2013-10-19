@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /docs/0.8.2/
+Disallow: /docs/0.8.1/
 Disallow: /docs/0.8.0/
 Disallow: /docs/0.7.0/
 Disallow: /docs/0.6/
