@@ -1,11 +1,18 @@
+<script type="text/javascript">
+ $.getJSON('http://pypi.python.org/pypi/scikit-image/json?callback=?',
+   function(data) {
+       $('#stable-version').html(data.info.version);
+     console.log(data);
+   });
+</script>
+
 <div class="well">
-    <strong>Stable</strong>
-    <p>0.9.0 - October 2013</p>
+    <strong>Stable</strong> - <span id="stable-version"/>1.0.0</span>
+
     <a class="btn btn-small" href="{{ pathto('download') }}"><i class="icon-download"></i> Download</a>
 </div>
 <div class="well">
-    <strong>Development</strong>
-    <p>pre-0.10.0</p>
+    <strong>Development</strong> - pre-0.10.0
     <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image"><i class="icon-download"></i> Download</a>
 </div>
 
@@ -26,4 +33,3 @@
 </div>
 
 <div class="clearfix"></div>
-
