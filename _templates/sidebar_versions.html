@@ -1,18 +1,23 @@
 <script type="text/javascript">
  $.getJSON('http://pypi.python.org/pypi/scikit-image/json?callback=?',
-   function(data) {
-       $('#stable-version').html(data.info.version);
-     console.log(data);
-   });
+           function(data) {
+             var month_names = ["January", "February", "March", "April", "May", "June",
+                                "July", "August", "September", "October", "November", "December"];
+             var upload_time = data.urls[0].upload_time;
+             $('#stable-version').html(data.info.version + " - "
+                                       + month_names[parseInt(upload_time.substring(5, 7))-1] + " "
+                                       + upload_time.substring(0, 4));
+
+           });
 </script>
 
 <div class="well">
-    <strong>Stable</strong> - <span id="stable-version"/>1.0.0</span>
+    <strong>Stable</strong> - <p id="stable-version"/>1.0.0</p>
 
     <a class="btn btn-small" href="{{ pathto('download') }}"><i class="icon-download"></i> Download</a>
 </div>
 <div class="well">
-    <strong>Development</strong> - pre-0.10.0
+    <strong>Development</strong> - <p>pre-0.10.0</p>
     <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image"><i class="icon-download"></i> Download</a>
 </div>
 
