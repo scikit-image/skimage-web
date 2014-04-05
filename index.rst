@@ -27,6 +27,17 @@
       <a class="btn btn-warning clearfix" href="/download">
       <i class="icon-download icon-white"></i>Download</a>
 
+.. container:: well hero row-fluid summary-box citation
+
+    .. raw:: html
+
+       <b>If you find this project useful, please cite:</b>
+       <br/><br/>
+       van der Walt S, Schönberger JL, Nunez-Iglesias J, Boulogne F, Warner JD et
+       al. (2014) scikit-image: Image processing in Python. PeerJ PrePrints 2:e336v2
+       <a href="http://dx.doi.org/10.7287/peerj.preprints.336v2">
+       http://dx.doi.org/10.7287/peerj.preprints.336v2
+       </a>
 
 Getting Started
 ---------------
@@ -58,6 +69,7 @@ visit our `gallery </docs/dev/auto_examples>`__.
 Announcements
 -------------
 
+- Pre-print of the scikit-image paper: `https://peerj.com/preprints/336/ <https://peerj.com/preprints/336/>`_
 - **Release!** Version 0.9.0 19/10/2013
 - **Release!** Version 0.8.0 04/03/2013
 - **Release!** Version 0.7.0 30/09/2012
