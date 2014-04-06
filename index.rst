@@ -33,7 +33,7 @@
 
        <b>If you find this project useful, please cite:</b>
        <br/><br/>
-       van der Walt S, Schönberger JL, Nunez-Iglesias J, Boulogne F, Warner JD et
+       Van der Walt S, Schönberger JL, Nunez-Iglesias J, Boulogne F, Warner JD et
        al. (2014) scikit-image: Image processing in Python. PeerJ PrePrints 2:e336v2
        <a href="http://dx.doi.org/10.7287/peerj.preprints.336v2">
        http://dx.doi.org/10.7287/peerj.preprints.336v2
