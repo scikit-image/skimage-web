@@ -230,3 +230,10 @@ p.admonition-title {
     /* Should derive width from span8 */
     width: 640px;
 }
+
+.citation {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+/*    padding: 1em;*/
+}
