@@ -83,7 +83,7 @@ if __name__ == '__main__':
         # ensure up-to-date before operating
         cd(pages_dir)
         sh('git checkout master')
-        sh('git pull')
+        sh('git pull origin master')
         cd(startdir)
 
     # don't `make html` here, because gh-pages already depends on html in Makefile
@@ -116,4 +116,4 @@ if __name__ == '__main__':
 
     print
     print 'Now verify the build in: %r' % pages_dir
-    print "If everything looks good, run 'git push' inside gh-pages/."
+    print "If everything looks good, run 'git push origin master' inside gh-pages/."
