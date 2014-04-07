@@ -27,18 +27,6 @@
       <a class="btn btn-warning clearfix" href="/download">
       <i class="icon-download icon-white"></i>Download</a>
 
-.. container:: well hero row-fluid summary-box citation
-
-    .. raw:: html
-
-       <b>If you find this project useful, please cite:</b>
-       <br/><br/>
-       Van der Walt S, Schönberger JL, Nunez-Iglesias J, Boulogne F, Warner JD et
-       al. (2014) scikit-image: Image processing in Python. PeerJ PrePrints 2:e336v2
-       <a href="http://dx.doi.org/10.7287/peerj.preprints.336v2">
-       http://dx.doi.org/10.7287/peerj.preprints.336v2
-       </a>
-
 Getting Started
 ---------------
 
@@ -65,6 +53,17 @@ visit our `gallery </docs/dev/auto_examples>`__.
       .. image:: _static/sobel-coins-small.png
          :class: coins-sample span6
 
+.. container:: well hero row-fluid summary-box citation
+
+    .. raw:: html
+
+       <b>If you find this project useful, please cite:</b>
+       <br/><br/>
+       Van der Walt S, Schönberger JL, Nunez-Iglesias J, Boulogne F, Warner JD et
+       al. (2014) scikit-image: Image processing in Python. PeerJ PrePrints 2:e336v2
+       <a href="http://dx.doi.org/10.7287/peerj.preprints.336v2">
+       http://dx.doi.org/10.7287/peerj.preprints.336v2
+       </a>
 
 Announcements
 -------------
