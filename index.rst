@@ -44,6 +44,7 @@ visit our `gallery </docs/dev/auto_examples>`__.
         image = data.coins() # or any NumPy array!
         edges = filter.sobel(image)
         io.imshow(edges)
+        io.show()
 
    .. container:: well span6
 
