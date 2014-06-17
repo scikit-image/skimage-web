@@ -4,10 +4,16 @@
              var month_names = ["January", "February", "March", "April", "May", "June",
                                 "July", "August", "September", "October", "November", "December"];
              var upload_time = data.urls[0].upload_time;
-             $('#stable-version').html(data.info.version + " - "
+             var dev_version = data.info.version;
+             $('#stable-version').html(dev_version + " - "
                                        + month_names[parseInt(upload_time.substring(5, 7))-1] + " "
                                        + upload_time.substring(0, 4));
 
+             var stable_version = dev_version.split(".").map(Number);
+             stable_version[1] += 1;
+             stable_version = stable_version.slice(0, 2).join(".");
+
+             $('#dev-version').html("pre-" + stable_version);
            });
 </script>
 
@@ -19,7 +25,7 @@
 </div>
 <div class="well">
     <strong>Development</strong>
-    <p>pre-0.11</p>
+    <p id="dev-version">pre-x.y.z</p>
     <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image"><i class="icon-download"></i> Download</a>
 </div>
 
