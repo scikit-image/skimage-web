@@ -63,7 +63,7 @@ visit our `gallery </docs/dev/auto_examples>`__.
        Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Inglesias,
        François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart,
        Tony Yu and the scikit-image contributors. <b>scikit-image: Image
-       processing in Python</b>. PeerJ 2:e453 (2012)
+       processing in Python</b>. PeerJ 2:e453 (2014)
 
        <a href="http://dx.doi.org/10.7717/peerj.453">
        http://dx.doi.org/10.7717/peerj.453
