@@ -1,5 +1,7 @@
 body {
     font-family: "Raleway";
+    letter-spacing: 0.02em;
+    font-size: 102%;
 }
 a {
     color: #CE5C00;
@@ -9,9 +11,6 @@ button,
 select,
 textarea {
     font-family: "Raleway";
-}
-pre {
-    font-size: 11px;
 }
 
 h1, h2, h3, h4, h5, h6 {
