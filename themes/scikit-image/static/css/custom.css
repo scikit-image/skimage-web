@@ -2,9 +2,16 @@ body {
     font-family: "Raleway";
     letter-spacing: 0.02em;
     font-size: 102%;
+    line-height: 23px;
 }
 a {
     color: #CE5C00;
+}
+li {
+    line-height: 23px;
+}
+code, pre {
+    font-family: 'monospace';
 }
 input,
 button,
