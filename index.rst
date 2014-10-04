@@ -60,7 +60,7 @@ visit our `gallery </docs/dev/auto_examples>`__.
 
        <b>If you find this project useful, please cite:</b>
        <br/><br/>
-       Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Inglesias,
+       Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias,
        François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart,
        Tony Yu and the scikit-image contributors. <b>scikit-image: Image
        processing in Python</b>. PeerJ 2:e453 (2014)
