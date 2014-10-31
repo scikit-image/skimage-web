@@ -59,7 +59,13 @@ visit our `gallery </docs/dev/auto_examples>`__.
     .. raw:: html
 
        <b>If you find this project useful, please cite:</b>
+
+       <span style="float: right;">
+         [<a href="_static/skimage.bib">BiBTeX</a>]
+       </span>
+
        <br/><br/>
+
        Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias,
        François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart,
        Tony Yu and the scikit-image contributors. <b>scikit-image: Image
