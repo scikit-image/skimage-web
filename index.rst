@@ -78,6 +78,7 @@ visit our `gallery </docs/dev/auto_examples>`__.
 Announcements
 -------------
 
+- **Release!** Version 0.11.0 04/03/2015
 - **Release!** Version 0.10.0 27/05/2014
 - Pre-print of the scikit-image paper: `https://peerj.com/preprints/336/ <https://peerj.com/preprints/336/>`_
 - **Release!** Version 0.9.0 19/10/2013
