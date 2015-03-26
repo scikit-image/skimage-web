@@ -4,21 +4,25 @@
              var month_names = ["January", "February", "March", "April", "May", "June",
                                 "July", "August", "September", "October", "November", "December"];
              var upload_time = data.urls[0].upload_time;
-             var dev_version = data.info.version;
-             $('#stable-version').html(dev_version + " - "
+             var stable_version = data.info.version;
+             $('#stable-version').html(stable_version + " - "
                                        + month_names[parseInt(upload_time.substring(5, 7))-1] + " "
                                        + upload_time.substring(0, 4));
+             var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
+             var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".txt";
+             $('#release-notes').attr('href', release_notes_url);
 
-             var stable_version = dev_version.split(".").map(Number);
-             stable_version[1] += 1;
-             stable_version = stable_version.slice(0, 2).join(".");
+             var dev_version = stable_version.split(".").map(Number);
+             dev_version[1] += 1;
+             dev_version = dev_version.slice(0, 2).join(".");
 
-             $('#dev-version').html("pre-" + stable_version);
+             $('#dev-version').html("pre-" + dev_version);
            });
 </script>
 
 <div class="well">
-    <strong>Stable</strong>
+    <strong>Stable</strong> 
+    (<a href="https://github.com/scikit-image/scikit-image/tree/master/doc/release" id="release-notes">release notes</a>)
     <p id="stable-version"/>x.y.z</p>
 
     <a class="btn btn-small" href="{{ pathto('download') }}"><i class="icon-download"></i> Download</a>
