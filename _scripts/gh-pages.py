@@ -9,11 +9,12 @@ If no tag is given, the current output of 'git describe' is used.  If given,
 that is how the resulting directory will be named.
 
 In practice, you should use either actual clean tags from a current build or
-something like 'current' as a stable URL for the most current version of the """
+something like 'current' as a stable URL for the most current version of the
+"""
 
-#-----------------------------------------------------------------------------
-# Imports
-#-----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#  Imports
+# ---------------------------------------------------------------------------
 import os
 import re
 import shutil
@@ -23,17 +24,18 @@ from os.path import join as pjoin
 
 from subprocess import Popen, PIPE, CalledProcessError, check_call
 
-#-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 # Globals
-#-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 
 pages_dir = 'gh-pages'
 html_dir = '_build/html'
 pages_repo = 'https://github.com/scikit-image/scikit-image.github.com.git'
 
-#-----------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------
 # Functions
-#-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 def sh(cmd):
     """Execute command in a subshell, return status code."""
     return check_call(cmd, shell=True)
@@ -67,13 +69,14 @@ def sh3(cmd):
 
 def init_repo(path):
     """clone the gh-pages repo if we haven't already."""
-    sh("git clone %s %s"%(pages_repo, path))
+    sh("git clone %s %s" % (pages_repo, path))
     # For an <x>.github.com site, the pages go in master, so we don't need
     # to checkout gh-pages.
 
-#-----------------------------------------------------------------------------
+
+# ----------------------------------------------------------------------------
 # Script starts
-#-----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 if __name__ == '__main__':
     startdir = os.getcwd()
     if not os.path.exists(pages_dir):
@@ -86,7 +89,8 @@ if __name__ == '__main__':
         sh('git pull origin master')
         cd(startdir)
 
-    # don't `make html` here, because gh-pages already depends on html in Makefile
+    ## don't `make html` here, because gh-pages already depends on html
+    ## in Makefile
     # sh('make html')
 
     # This is pretty unforgiving: we unconditionally nuke the destination
@@ -99,21 +103,21 @@ if __name__ == '__main__':
     try:
         cd(pages_dir)
         status = sh2('git status | head -1')
-        branch = re.match('On branch (.*)$', status).group(1)
-        if branch != 'master':
+        branch = re.match(b'On branch (.*)$', status).group(1)
+        if branch != b'master':
             e = 'On %r, git branch is %r, MUST be "master"' % (pages_dir,
-                                                                 branch)
+                                                               branch)
             raise RuntimeError(e)
 
         sh('git add .')
         sh('git commit -am"Updated website (automated commit)"')
-        print
-        print 'Most recent 3 commits:'
+        print()
+        print('Most recent 3 commits:')
         sys.stdout.flush()
         sh('git --no-pager log --oneline -n 3')
     finally:
         cd(startdir)
 
-    print
-    print 'Now verify the build in: %r' % pages_dir
-    print "If everything looks good, run 'git push origin master' inside gh-pages/."
+    print()
+    print('Now verify the build in: %r' % pages_dir)
+    print("If everything looks good, run 'git push origin master' inside gh-pages/.")
