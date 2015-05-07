@@ -11,7 +11,7 @@ li {
     line-height: 23px;
 }
 code, pre {
-    font-family: 'monospace';
+    font-family: monospace;
 }
 input,
 button,
