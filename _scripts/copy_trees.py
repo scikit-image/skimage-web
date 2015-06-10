@@ -7,11 +7,12 @@
 #-----------------------------------------------------------------------------
 from __future__ import print_function
 
-import __builtin__
 import os
 import sys
 
 from os.path import join as pjoin
+
+builtin_print = print
 
 #-----------------------------------------------------------------------------
 # Config
@@ -19,7 +20,9 @@ from os.path import join as pjoin
 
 # From sphinx conf.py
 sphinx_conf = {}
-execfile('conf.py',{},sphinx_conf)
+with open("conf.py") as f:
+    code = compile(f.read(), "conf.py", 'exec')
+    exec(code, {}, sphinx_conf)
 
 # Local
 verbose = False
@@ -49,7 +52,7 @@ top_files = ['links.txt']
 def print(*args, **kw):
     verb = kw.pop('verbose', verbose)
     if verb:
-        __builtin__.print(*args, **kw)
+        builtin_print(*args, **kw)
 
 
 def keep_filename(f, skip_ext=skip_extensions):
@@ -61,7 +64,7 @@ def keep_filename(f, skip_ext=skip_extensions):
         return False
 
     return os.path.splitext(f)[1] not in skip_ext
-    
+
 
 def copy_files(root, files):
     did_copy = False
@@ -73,15 +76,13 @@ def copy_files(root, files):
             did_copy = True
     if did_copy:
         print()
-    
+
 
 def main():
     if not os.path.isdir(out_dir):
         err = 'ERROR: Output directory {0} not found.'.format(out_dir)
         print(err, file=sys.stderr, verbose=True)
         sys.exit(1)
-    
-    skip_base = pjoin(src_dir, skip_prefix)
 
     for root, dirs, files in os.walk(src_dir, followlinks=True):
         dirs.sort()
