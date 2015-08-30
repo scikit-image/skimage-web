@@ -39,10 +39,10 @@ visit our `gallery </docs/dev/auto_examples>`__.
 
       ::
 
-        from skimage import data, io, filter
+        from skimage import data, io, filters
 
         image = data.coins() # or any NumPy array!
-        edges = filter.sobel(image)
+        edges = filters.sobel(image)
         io.imshow(edges)
         io.show()
 
