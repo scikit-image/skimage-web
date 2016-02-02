@@ -84,8 +84,9 @@ h6 {
 
 .headerlink {
     margin-left: 10px;
-    color: #ddd;
-    display: none;
+    color: white; /* fallback */
+    color: rgba(221, 221, 221, 0);
+    display: inline;
 }
 h1:hover .headerlink,
 h2:hover .headerlink,
@@ -93,7 +94,7 @@ h3:hover .headerlink,
 h4:hover .headerlink,
 h5:hover .headerlink,
 h6:hover .headerlink {
-    display: inline;
+    color: #ddd;
 }
 .headerlink:hover {
     color: #CE5C00;
