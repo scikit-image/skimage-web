@@ -100,7 +100,7 @@ if __name__ == '__main__':
     sh('rm -rf %s/*' % pages_dir)
 
     sh('cp -r %s/* %s/' % (html_dir, pages_dir))
-    sh('cp -r %s/.nojekyll %s/' % (html_dir, pages_dir))
+    sh('cp -r .nojekyll %s/' % pages_dir)
 
     try:
         cd(pages_dir)
