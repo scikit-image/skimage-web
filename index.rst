@@ -27,6 +27,42 @@
       <a class="btn btn-warning clearfix" href="/download">
       <i class="icon-download icon-white"></i>Download</a>
 
+
+.. container:: well hero row-fluid summary-box citation
+
+    .. raw:: html
+
+       <b>If you find this project useful, please cite:</b>
+
+       <span style="float: right;">
+         [<a href="_static/skimage.bib">BiBTeX</a>]
+       </span>
+
+       <br/><br/>
+
+       Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias,
+       François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart,
+       Tony Yu and the scikit-image contributors. <b>scikit-image: Image
+       processing in Python</b>. PeerJ 2:e453 (2014)
+
+       <a href="http://dx.doi.org/10.7717/peerj.453">
+       http://dx.doi.org/10.7717/peerj.453
+       </a>
+
+
+News
+-------------
+
+- **Release!** Version 0.12.0 2016-03-06
+- **Release!** Version 0.11.0 2015-03-04
+- **Release!** Version 0.10.0 2014-05-27
+- Pre-print of the scikit-image paper: `https://peerj.com/preprints/336/ <https://peerj.com/preprints/336/>`_
+- **Release!** Version 0.9.0 2013-10-19
+- **Release!** Version 0.8.0 2013-03-04
+- **Release!** Version 0.7.0 2012-09-30
+- **EuroSciPy Sprint**, Belgium, August 2012
+- **SciPy 2012 Sprint**, Austin, July 2012
+
 Getting Started
 ---------------
 
@@ -55,39 +91,7 @@ visit our `gallery </docs/dev/auto_examples>`__.
       .. image:: _static/sobel-coins-small.png
          :class: coins-sample span6
 
-.. container:: well hero row-fluid summary-box citation
-
-    .. raw:: html
-
-       <b>If you find this project useful, please cite:</b>
-
-       <span style="float: right;">
-         [<a href="_static/skimage.bib">BiBTeX</a>]
-       </span>
-
-       <br/><br/>
-
-       Stéfan van der Walt, Johannes L. Schönberger, Juan Nunez-Iglesias,
-       François Boulogne, Joshua D. Warner, Neil Yager, Emmanuelle Gouillart,
-       Tony Yu and the scikit-image contributors. <b>scikit-image: Image
-       processing in Python</b>. PeerJ 2:e453 (2014)
-
-       <a href="http://dx.doi.org/10.7717/peerj.453">
-       http://dx.doi.org/10.7717/peerj.453
-       </a>
-
-Announcements
--------------
-
-- **Release!** Version 0.12.0 2016-03-06
-- **Release!** Version 0.11.0 2015-03-04
-- **Release!** Version 0.10.0 2014-05-27
-- Pre-print of the scikit-image paper: `https://peerj.com/preprints/336/ <https://peerj.com/preprints/336/>`_
-- **Release!** Version 0.9.0 2013-10-19
-- **Release!** Version 0.8.0 2013-03-04
-- **Release!** Version 0.7.0 2012-09-30
-- **EuroSciPy Sprint**, Belgium, August 2012
-- **SciPy 2012 Sprint**, Austin, July 2012
+You can read more in our `user guide </docs/dev/user_guide>`__. 
 
 
 Developers

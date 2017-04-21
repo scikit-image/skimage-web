@@ -16,6 +16,12 @@ The latest stable release is also included as part of the `Enthought Python
 Distribution (EPD) <http://enthought.com/products/epd.php>`__ and `Python(x,y)
 <http://code.google.com/p/pythonxy/wiki/Welcome>`__.
 
+For Conda-based distributions (Anaconda, Miniconda), execute:
+
+::
+
+	conda install scikit-image
+	
 
 Linux and OSX
 `````````````
@@ -27,11 +33,6 @@ index <http://pypi.python.org/pypi/scikit-image>`__ using
 
     pip install -U scikit-image
 
-or
-
-::
-
-    easy_install -U scikit-image
 
 Latest development version
 --------------------------
