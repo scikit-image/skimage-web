@@ -53,15 +53,10 @@
 News
 ----
 
-- **Release!** Version 0.12.0 2016-03-06
-- **Release!** Version 0.11.0 2015-03-04
-- **Release!** Version 0.10.0 2014-05-27
-- Pre-print of the scikit-image paper: `https://peerj.com/preprints/336/ <https://peerj.com/preprints/336/>`_
-- **Release!** Version 0.9.0 2013-10-19
-- **Release!** Version 0.8.0 2013-03-04
-- **Release!** Version 0.7.0 2012-09-30
-- **EuroSciPy Sprint**, Belgium, August 2012
-- **SciPy 2012 Sprint**, Austin, July 2012
+- **Sprint!** SciPy2017, Austin, 10–6 July 2017
+- **Release!** Version 0.13 2017-03-29
+- **Release!** Version 0.12 2016-03-06
+- **Release!** Version 0.11 2015-03-04
 
 Getting Started
 ---------------
