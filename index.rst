@@ -53,6 +53,7 @@
 News
 ----
 
+- **Release!** Version 0.13.1 2017-09-28
 - **Sprint!** SciPy2017, Austin, 10–6 July 2017
 - **Release!** Version 0.13 2017-03-29
 - **Release!** Version 0.12 2016-03-06
