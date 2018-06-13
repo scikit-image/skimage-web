@@ -20,7 +20,7 @@ For Conda-based distributions (Anaconda, Miniconda), execute:
 
 ::
 
-	conda install scikit-image
+	conda install -c conda-forge scikit-image
 	
 
 Linux and OSX
