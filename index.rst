@@ -45,8 +45,8 @@
        Tony Yu and the scikit-image contributors. <b>scikit-image: Image
        processing in Python</b>. PeerJ 2:e453 (2014)
 
-       <a href="http://dx.doi.org/10.7717/peerj.453">
-       http://dx.doi.org/10.7717/peerj.453
+       <a href="https://doi.org/10.7717/peerj.453">
+       https://doi.org/10.7717/peerj.453
        </a>
 
 
