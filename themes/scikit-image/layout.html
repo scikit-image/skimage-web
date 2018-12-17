@@ -31,12 +31,6 @@
         <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
     {%- endfor %}
 
-    <script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'scikit-image/scikit-image'
-    };
-    </script>
-    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 {%- endmacro %}
 
 {%- macro css() %}
@@ -116,5 +110,7 @@
             Created using <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="http://sphinx.pocoo.org/">Sphinx</a>.
         </small>
     </div>
+
+    <div class="chatbutton"><a href="https://skimage.zulipchat.com">Open Chat</a></div>
 </body>
 </html>
