@@ -273,3 +273,10 @@ p.admonition-title {
     text-transform: uppercase;
     font-size:1em;
 }
+
+.sidebar-subtitle {
+  font-size: small;
+  color: slateblue;
+  font-style: italic;
+  float: right;
+}
