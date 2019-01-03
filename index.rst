@@ -87,11 +87,3 @@ visit our `gallery </docs/dev/auto_examples>`__.
          :class: coins-sample span6
 
 You can read more in our `user guide </docs/dev/user_guide>`__. 
-
-
-Developers
-----------
-
-- `Pull requests <https://github.com/scikit-image/scikit-image/pulls>`__
-- `Bug reports <https://github.com/scikit-image/scikit-image/issues>`__
-- `Ohloh summary <http://ohloh.net/p/scikit-image>`__

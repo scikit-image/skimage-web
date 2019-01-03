@@ -275,8 +275,8 @@ p.admonition-title {
 }
 
 .sidebar-subtitle {
-  font-size: small;
-  color: slateblue;
+  font-size: 0.8em;
+  color: black;
   font-style: italic;
   float: right;
 }
