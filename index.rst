@@ -53,10 +53,10 @@
 News
 ----
 
+- **Release!** Version 0.14.2 2019-01-18
 - **Release!** Version 0.14.1 2018-10-02
 - **Release!** Version 0.14.0 2018-05-29
 - **Sprint!** UC Berkeley, Berkeley, CA, USA, 28 May—1 Jun, 2018
-- **Release!** Version 0.13.1 2017-09-28
 
 Getting Started
 ---------------
