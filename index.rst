@@ -8,7 +8,7 @@
    .. raw:: html
 
       <div class="gallery-random">
-        <script src="http://scikit-image.org/docs/dev/_static/random.js"></script>
+        <script src="https://scikit-image.org/docs/dev/_static/random.js"></script>
         <script type="text/javascript">
           insert_gallery();
         </script>
