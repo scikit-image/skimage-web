@@ -53,6 +53,7 @@
 News
 ----
 
+- **Release!** Version 0.14.3 2019-06-11
 - **Release!** Version 0.15.0 2019-04-02
 - **Release!** Version 0.14.2 2019-01-18
 - `CZI announces funding support for scikit-image! <https://chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging/>`__ 2018-12-07
