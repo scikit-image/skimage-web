@@ -23,8 +23,7 @@
    <https://www.ohloh.net/p/scikit-image/contributors>`__.
 
    .. raw:: html
-
-      <a class="btn btn-warning clearfix" href="/download">
+      <a class="btn btn-warning clearfix" href="/docs/stable/install.html">
       <i class="icon-download icon-white"></i>Download</a>
 
 
@@ -87,4 +86,4 @@ visit our `gallery </docs/dev/auto_examples>`__.
       .. image:: _static/sobel-coins-small.png
          :class: coins-sample span6
 
-You can read more in our `user guide </docs/dev/user_guide>`__. 
+You can read more in our `user guide </docs/stable/user_guide.html>`__.
