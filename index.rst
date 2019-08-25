@@ -86,4 +86,4 @@ visit our `gallery </docs/dev/auto_examples>`__.
       .. image:: _static/sobel-coins-small.png
          :class: coins-sample span6
 
-You can read more in our `user guide </docs/dev/user_guide.html>`__.
+You can read more in our `user guide </docs/stable/user_guide.html>`__.
