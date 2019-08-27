@@ -20,7 +20,7 @@
    is available `free of charge and free of restriction
    </docs/dev/license.html>`__.  We pride ourselves on high-quality,
    peer-reviewed code, written by an active `community of volunteers
-   <https://www.ohloh.net/p/scikit-image/contributors>`__.
+   <https://www.openhub.net/p/scikit-image/contributors>`__.
 
    .. raw:: html
       <a class="btn btn-warning clearfix" href="/docs/stable/install.html">
