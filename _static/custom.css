@@ -1,0 +1,20 @@
+.team-member {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 7rem;
+    height: 70px;
+}
+
+.team-member-photo img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.team-member-name {
+    display: none;
+}
+
+.team-member-handle {
+    font-weight: bold;
+}

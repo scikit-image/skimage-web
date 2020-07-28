@@ -88,3 +88,5 @@ visit our `gallery </docs/dev/auto_examples>`__.
          :class: coins-sample span6
 
 You can read more in our `user guide </docs/stable/user_guide.html>`__.
+
+.. include:: team.rst

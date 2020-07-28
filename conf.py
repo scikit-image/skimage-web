@@ -174,3 +174,6 @@ html_show_sourcelink = False
 
 # If nonempty, this is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = ''
+
+def setup(app):
+    app.add_css_file("custom.css")
