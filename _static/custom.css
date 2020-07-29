@@ -4,6 +4,7 @@
     margin: 0.5rem;
     width: 7rem;
     height: 70px;
+    text-align: center;
 }
 
 .team-member-photo img {
@@ -12,9 +13,9 @@
 }
 
 .team-member-name {
-    display: none;
+    font-weight: bold;
 }
 
 .team-member-handle {
-    font-weight: bold;
+    display: none;
 }

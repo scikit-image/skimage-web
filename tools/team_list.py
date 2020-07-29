@@ -40,8 +40,8 @@ def render_team(team):
      <div class="team-member-photo">
        <img src="{member['avatar_url']}&s=40"/>
      </div>
-     <div class="team-member-name">{profile['name']}</div>
-     <a href="https://github.com/{member['login']}" class="team-member-handle">@{member['login']}</a>
+     <a href="https://github.com/{member['login']}" class="team-member-name">{profile['name']}</a>
+     <div class="team-member-handle">@{member['login']}</div>
    </div>
 """)
 
