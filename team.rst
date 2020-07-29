@@ -132,7 +132,7 @@ is guided by the following core team:
 
    <div class="team-member">
      <div class="team-member-photo">
-       <img src="https://avatars1.githubusercontent.com/u/1315589?u=925c7a474919699fc03c39a75876dd0abc0fa790&v=4&s=40"/>
+       <img src="https://avatars2.githubusercontent.com/u/1315589?u=05d88a102b0ab695b824525ea208c0a7e561c2c2&v=4&s=40"/>
      </div>
      <a href="https://github.com/soupault" class="team-member-name">Egor Panfilov</a>
      <div class="team-member-handle">@soupault</div>
