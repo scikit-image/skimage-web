@@ -1,10 +1,13 @@
 .team-member {
     display: inline-block;
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 0.25rem;
     width: 7rem;
-    height: 70px;
     text-align: center;
+    vertical-align: top;
+}
+
+.team-member-photo {
 }
 
 .team-member-photo img {
@@ -13,6 +16,8 @@
 }
 
 .team-member-name {
+    display: block;
+    margin-top: 0.5rem;
     font-weight: bold;
 }
 

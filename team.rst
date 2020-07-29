@@ -110,7 +110,7 @@ is guided by the following core team:
 
    <div class="team-member">
      <div class="team-member-photo">
-       <img src="https://avatars2.githubusercontent.com/u/3438227?v=4&s=40"/>
+       <img src="https://avatars2.githubusercontent.com/u/3438227?u=dd1bcfe9172643955985de8ecdf7ba0627725557&v=4&s=40"/>
      </div>
      <a href="https://github.com/rfezzani" class="team-member-name">Riadh Fezzani</a>
      <div class="team-member-handle">@rfezzani</div>
@@ -150,6 +150,25 @@ is guided by the following core team:
    </div>
 
 
+
+Emeritus Developers
+-------------------
+
+We thank these previously-active core developers for their contributions to scikit-image.
+
+
+
+.. raw:: html
+
+   <div class="team-member">
+     <div class="team-member-photo">
+       <img src="https://avatars3.githubusercontent.com/u/2096628?u=2a4822ff8dc6b4f1162c58716d48fdfac08c8601&v=4&s=40"/>
+     </div>
+     <a href="https://github.com/blink1073" class="team-member-name">Steven Silvester</a>
+     <div class="team-member-handle">@blink1073</div>
+   </div>
+
+
 .. raw:: html
 
    <div class="team-member">
@@ -170,12 +189,4 @@ is guided by the following core team:
      <a href="https://github.com/zpincus" class="team-member-name">Zachary Pincus</a>
      <div class="team-member-handle">@zpincus</div>
    </div>
-
-
-
-Emeritus Developers
--------------------
-
-We thank these previously-active core developers for their contributions to scikit-image.
-
 
