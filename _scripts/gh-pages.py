@@ -113,7 +113,7 @@ if __name__ == '__main__':
             raise RuntimeError(e)
 
         sh('git add .')
-        sh('git commit -am"Updated website (automated commit)"')
+        sh('git commit --allow-empty -am"Updated website (automated commit)"')
         print()
         print('Most recent 3 commits:')
         sys.stdout.flush()
