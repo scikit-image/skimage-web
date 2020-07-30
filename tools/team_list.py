@@ -18,8 +18,12 @@ if token is None:
 
 
 def api(url):
-    return requests.get(url=url,
+    json = requests.get(url=url,
                         headers={'Authorization': f'token {token}'}).json()
+    if 'message' in json and json['message'] == 'Bad credentials':
+        raise RuntimeError('Invalid token provided')
+    else:
+        return json
 
 
 resp = api(team_url)
