@@ -163,6 +163,23 @@ is guided by the following core team:
 .. raw:: html
 
    <div class="team-member">
+     <a href="https://github.com/mkcor" class="team-member-name">
+        <div class="team-member-photo">
+           <img
+             src="https://avatars3.githubusercontent.com/u/2227806?u=5320031216d435cd2bb0259a116a5623108c9b26&v=4&s=40"
+             loading="lazy"
+             alt="Avatar picture of @mkcor"
+           />
+        </div>
+        Marianne Corvellec
+     </a>
+     <div class="team-member-handle">@mkcor</div>
+   </div>
+
+
+.. raw:: html
+
+   <div class="team-member">
      <a href="https://github.com/rfezzani" class="team-member-name">
         <div class="team-member-photo">
            <img
