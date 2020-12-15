@@ -32,7 +32,7 @@ jobs:
 
     - name: Install SSH Client 🔑
       if: github.ref == 'refs/heads/master'
-      uses: webfactory/ssh-agent@v0.2.0
+      uses: webfactory/ssh-agent@v0.4.1
       with:
         ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
 
