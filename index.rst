@@ -52,6 +52,7 @@
 News
 ----
 
+- **Release!** Version 0.18.0 2020-12-15
 - **Release!** Version 0.17.1 2020-05-08
 - **Release!** Version 0.16.1 2019-10-14
 - **Release!** Version 0.14.3 2019-06-11
