@@ -23,9 +23,9 @@
    <https://www.openhub.net/p/scikit-image/contributors>`__.
 
    .. raw:: html
+
       <a class="btn btn-warning clearfix" href="/docs/stable/install.html">
       <i class="icon-download icon-white"></i>Download</a>
-
 
 .. container:: well hero row-fluid summary-box citation
 
@@ -53,13 +53,8 @@ News
 ----
 
 - **Release!** Version 0.18.0 2020-12-15
-- **Release!** Version 0.17.1 2020-05-08
-- **Release!** Version 0.16.1 2019-10-14
-- **Release!** Version 0.14.3 2019-06-11
-- **Release!** Version 0.15.0 2019-04-02
-- **Release!** Version 0.14.2 2019-01-18
-- `CZI announces funding support for scikit-image! <https://chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging/>`__ 2018-12-07
-- **Release!** Version 0.14.1 2018-10-02
+- `CZI announces second round of funding for scikit-image
+  <https://chanzuckerberg.com/newsroom/awards-3-8-million-open-source-software-projects-essential-science/>`__ 2020-03-27
 
 Getting Started
 ---------------
