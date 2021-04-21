@@ -72,7 +72,7 @@ def sh3(cmd):
 def init_repo(path):
     """clone the gh-pages repo if we haven't already."""
     sh("git clone %s %s" % (pages_repo, path))
-    # For an <x>.github.com site, the pages go in master, so we don't need
+    # For an <x>.github.com site, the pages go in main, so we don't need
     # to checkout gh-pages.
 
 
@@ -87,8 +87,8 @@ if __name__ == '__main__':
     else:
         # ensure up-to-date before operating
         cd(pages_dir)
-        sh('git checkout master')
-        sh('git pull origin master')
+        sh('git checkout main')
+        sh('git pull origin main')
         cd(startdir)
 
     ## don't `make html` here, because gh-pages already depends on html
@@ -107,8 +107,8 @@ if __name__ == '__main__':
         cd(pages_dir)
         status = sh2('git status | head -1')
         branch = re.match(b'On branch (.*)$', status).group(1)
-        if branch != b'master':
-            e = 'On %r, git branch is %r, MUST be "master"' % (pages_dir,
+        if branch != b'main':
+            e = 'On %r, git branch is %r, MUST be "main"' % (pages_dir,
                                                                branch)
             raise RuntimeError(e)
 
@@ -123,4 +123,4 @@ if __name__ == '__main__':
 
     print()
     print('Now verify the build in: %r' % pages_dir)
-    print("If everything looks good, run 'git push origin master' inside gh-pages/.")
+    print("If everything looks good, run 'git push origin main' inside gh-pages/.")

@@ -3,7 +3,7 @@ name: Build and upload website
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -31,17 +31,17 @@ jobs:
         make team
 
     - name: Install SSH Client 🔑
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       uses: webfactory/ssh-agent@v0.4.1
       with:
         ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
 
     - name: Build and deploy docs
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       run: |
         git config --global user.email "ci@scikit-image.org"
         git config --global user.name "GitHub Actions"
 
         make gh-pages
         cd gh-pages
-        git push origin master
+        git push origin main
