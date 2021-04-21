@@ -13,7 +13,7 @@ acknowledging our own mistakes, and generous in our praise.
 If you ever feel like you are not being treated as well as you should, please
 get in touch with one of the project leads (our email addresses are available
 through our GitHub profiles).  We are committed to making this community a
-safe and welcome space.
+safe and welcoming space.
 
 You can learn more about contributing to scikit-image at
 https://scikit-image.org/docs/stable/contribute.html.
