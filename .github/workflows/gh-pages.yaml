@@ -26,7 +26,7 @@ jobs:
 
     - name: Download team list
       env:
-        GH_TOKEN: ${{ secrets.GH_TEAM_QUERY_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         make team
 
