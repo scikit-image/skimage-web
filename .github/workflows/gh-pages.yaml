@@ -25,6 +25,7 @@ jobs:
         pip install sphinx
 
     - name: Download team list
+      if: github.ref == 'refs/heads/main'
       env:
         GH_TOKEN: ${{ secrets.GH_TEAM_QUERY_TOKEN }}
       run: |
