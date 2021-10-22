@@ -27,6 +27,7 @@ def api(url):
 
 
 resp = api(team_url)
+print(resp)
 team = sorted(resp, key=lambda user: user['login'].lower())
 
 resp = api(emeritus_team_url)
