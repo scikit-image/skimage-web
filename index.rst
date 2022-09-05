@@ -52,7 +52,7 @@
 News
 ----
 
-- **Release!** Version 0.19.2 2022-02-17
+- **Release!** Version 0.19.3 2022-06-12
 - `CZI announces second round of funding for scikit-image
   <https://chanzuckerberg.com/newsroom/awards-3-8-million-open-source-software-projects-essential-science/>`__ 2020-03-27
 
