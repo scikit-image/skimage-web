@@ -124,7 +124,7 @@ html_short_title = "scikit-image"
 
 # The name of an image file (within the static path) to use as favicon of the
 # pixels large.
-html_favicon = "favicon.ico"
+html_favicon = "_static/favicon.ico"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
