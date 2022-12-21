@@ -13,7 +13,7 @@ is guided by the following core team:
      <a href="https://github.com/emmanuelle" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/263366?v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/263366?v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @emmanuelle"
            />
@@ -30,7 +30,7 @@ is guided by the following core team:
      <a href="https://github.com/grlee77" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/6528957?u=b74cdd23ec9edad8546b503b3fe86b927de41c25&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/6528957?u=b74cdd23ec9edad8546b503b3fe86b927de41c25&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @grlee77"
            />
@@ -47,7 +47,7 @@ is guided by the following core team:
      <a href="https://github.com/hmaarrfk" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/90008?u=19cf915f2609e5b272a4144d8a2840cc6e51f28a&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/90008?u=19cf915f2609e5b272a4144d8a2840cc6e51f28a&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @hmaarrfk"
            />
@@ -64,7 +64,7 @@ is guided by the following core team:
      <a href="https://github.com/jarrodmillman" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/123428?v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/123428?v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @jarrodmillman"
            />
@@ -81,7 +81,7 @@ is guided by the following core team:
      <a href="https://github.com/JDWarner" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/2184487?u=09e9b57497b6f07a61ee788d722fa9e6988f5c17&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/2184487?u=09e9b57497b6f07a61ee788d722fa9e6988f5c17&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @JDWarner"
            />
@@ -98,7 +98,7 @@ is guided by the following core team:
      <a href="https://github.com/jni" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/492549?v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/492549?v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @jni"
            />
@@ -115,7 +115,7 @@ is guided by the following core team:
      <a href="https://github.com/lagru" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/20140352?u=fa6debadd435c15847d1435c49753f349e2d3526&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/20140352?u=fa6debadd435c15847d1435c49753f349e2d3526&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @lagru"
            />
@@ -132,7 +132,7 @@ is guided by the following core team:
      <a href="https://github.com/mkcor" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/2227806?u=5320031216d435cd2bb0259a116a5623108c9b26&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/2227806?u=5320031216d435cd2bb0259a116a5623108c9b26&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @mkcor"
            />
@@ -149,7 +149,7 @@ is guided by the following core team:
      <a href="https://github.com/rfezzani" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/3438227?u=dd1bcfe9172643955985de8ecdf7ba0627725557&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/3438227?u=dd1bcfe9172643955985de8ecdf7ba0627725557&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @rfezzani"
            />
@@ -166,7 +166,7 @@ is guided by the following core team:
      <a href="https://github.com/soupault" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/1315589?u=52f44df2595a8f15b9f9ae82d1cb36fdb26b57a6&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/1315589?u=52f44df2595a8f15b9f9ae82d1cb36fdb26b57a6&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @soupault"
            />
@@ -183,7 +183,7 @@ is guided by the following core team:
      <a href="https://github.com/stefanv" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/45071?u=c779b5e06448fbc638bc987cdfe305c7f9a7175e&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/45071?u=c779b5e06448fbc638bc987cdfe305c7f9a7175e&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @stefanv"
            />
@@ -208,7 +208,7 @@ We thank these previously-active core developers for their contributions to scik
      <a href="https://github.com/ahojnnes" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/134307?u=c3083d33a74e974bc69ff3477f6f72bff2126a6b&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/134307?u=c3083d33a74e974bc69ff3477f6f72bff2126a6b&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @ahojnnes"
            />
@@ -225,7 +225,7 @@ We thank these previously-active core developers for their contributions to scik
      <a href="https://github.com/alexdesiqueira" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/5776022?u=d73123d41fbf598789c6fecd972a6058af2a902f&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/5776022?u=d73123d41fbf598789c6fecd972a6058af2a902f&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @alexdesiqueira"
            />
@@ -242,7 +242,7 @@ We thank these previously-active core developers for their contributions to scik
      <a href="https://github.com/amueller" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/449558?u=1fae3e7888b9d2812333812f80e91ead9fbfdd3e&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/449558?u=1fae3e7888b9d2812333812f80e91ead9fbfdd3e&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @amueller"
            />
@@ -259,7 +259,7 @@ We thank these previously-active core developers for their contributions to scik
      <a href="https://github.com/blink1073" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/2096628?u=2a4822ff8dc6b4f1162c58716d48fdfac08c8601&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/2096628?u=2a4822ff8dc6b4f1162c58716d48fdfac08c8601&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @blink1073"
            />
@@ -276,7 +276,7 @@ We thank these previously-active core developers for their contributions to scik
      <a href="https://github.com/sciunto" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/335370?u=b9359e95f23c1864c804ba22f41bcf540951b20e&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/335370?u=b9359e95f23c1864c804ba22f41bcf540951b20e&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @sciunto"
            />
@@ -293,7 +293,7 @@ We thank these previously-active core developers for their contributions to scik
      <a href="https://github.com/tonysyu" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/133031?v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/133031?v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @tonysyu"
            />
@@ -310,7 +310,7 @@ We thank these previously-active core developers for their contributions to scik
      <a href="https://github.com/zpincus" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/174217?u=10ce83ad89fea4a3bfa70e9907bbac4a469f3073&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/174217?u=10ce83ad89fea4a3bfa70e9907bbac4a469f3073&v=4&s=60"
              loading="lazy"
              alt="Avatar picture of @zpincus"
            />

@@ -44,7 +44,7 @@ def render_team(team):
      <a href="https://github.com/{member['login']}" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="{member['avatar_url']}&s=40"
+             src="{member['avatar_url']}&s=60"
              loading="lazy"
              alt="Avatar picture of @{profile['login']}"
            />
