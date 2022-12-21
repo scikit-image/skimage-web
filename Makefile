@@ -54,6 +54,11 @@ site: html
 
 # Copy changes to the repo from which they are served
 gh-pages: site
+	@echo
+	@echo
+	@echo "!! Builds are now done via GH actions, so this step should be unnecessary"
+	@echo
+	@echo
 	python _scripts/gh-pages.py
 
 team:

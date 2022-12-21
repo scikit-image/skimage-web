@@ -10,57 +10,6 @@ is guided by the following core team:
 .. raw:: html
 
    <div class="team-member">
-     <a href="https://github.com/ahojnnes" class="team-member-name">
-        <div class="team-member-photo">
-           <img
-             src="https://avatars.githubusercontent.com/u/134307?u=c3083d33a74e974bc69ff3477f6f72bff2126a6b&v=4&s=40"
-             loading="lazy"
-             alt="Avatar picture of @ahojnnes"
-           />
-        </div>
-        Johannes Schönberger
-     </a>
-     <div class="team-member-handle">@ahojnnes</div>
-   </div>
-
-
-.. raw:: html
-
-   <div class="team-member">
-     <a href="https://github.com/alexdesiqueira" class="team-member-name">
-        <div class="team-member-photo">
-           <img
-             src="https://avatars.githubusercontent.com/u/5776022?u=7677a4391774e25b0c0d5c946021a8ab7a1ee519&v=4&s=40"
-             loading="lazy"
-             alt="Avatar picture of @alexdesiqueira"
-           />
-        </div>
-        Alexandre de Siqueira
-     </a>
-     <div class="team-member-handle">@alexdesiqueira</div>
-   </div>
-
-
-.. raw:: html
-
-   <div class="team-member">
-     <a href="https://github.com/amueller" class="team-member-name">
-        <div class="team-member-photo">
-           <img
-             src="https://avatars.githubusercontent.com/u/449558?u=1fae3e7888b9d2812333812f80e91ead9fbfdd3e&v=4&s=40"
-             loading="lazy"
-             alt="Avatar picture of @amueller"
-           />
-        </div>
-        Andreas Mueller
-     </a>
-     <div class="team-member-handle">@amueller</div>
-   </div>
-
-
-.. raw:: html
-
-   <div class="team-member">
      <a href="https://github.com/emmanuelle" class="team-member-name">
         <div class="team-member-photo">
            <img
@@ -86,7 +35,7 @@ is guided by the following core team:
              alt="Avatar picture of @grlee77"
            />
         </div>
-        Gregory R. Lee
+        Gregory Lee
      </a>
      <div class="team-member-handle">@grlee77</div>
    </div>
@@ -106,6 +55,23 @@ is guided by the following core team:
         Mark Harfouche
      </a>
      <div class="team-member-handle">@hmaarrfk</div>
+   </div>
+
+
+.. raw:: html
+
+   <div class="team-member">
+     <a href="https://github.com/jarrodmillman" class="team-member-name">
+        <div class="team-member-photo">
+           <img
+             src="https://avatars.githubusercontent.com/u/123428?v=4&s=40"
+             loading="lazy"
+             alt="Avatar picture of @jarrodmillman"
+           />
+        </div>
+        Jarrod Millman
+     </a>
+     <div class="team-member-handle">@jarrodmillman</div>
    </div>
 
 
@@ -149,7 +115,7 @@ is guided by the following core team:
      <a href="https://github.com/lagru" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/20140352?u=aa80243f7c2da2341ac944d70a33daef0c369aed&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/20140352?u=fa6debadd435c15847d1435c49753f349e2d3526&v=4&s=40"
              loading="lazy"
              alt="Avatar picture of @lagru"
            />
@@ -200,7 +166,7 @@ is guided by the following core team:
      <a href="https://github.com/soupault" class="team-member-name">
         <div class="team-member-photo">
            <img
-             src="https://avatars.githubusercontent.com/u/1315589?u=4ef9afb42ea75a6a9a6f6f9afcca0a4114b0c0b5&v=4&s=40"
+             src="https://avatars.githubusercontent.com/u/1315589?u=52f44df2595a8f15b9f9ae82d1cb36fdb26b57a6&v=4&s=40"
              loading="lazy"
              alt="Avatar picture of @soupault"
            />
@@ -234,6 +200,57 @@ Emeritus Developers
 
 We thank these previously-active core developers for their contributions to scikit-image.
 
+
+
+.. raw:: html
+
+   <div class="team-member">
+     <a href="https://github.com/ahojnnes" class="team-member-name">
+        <div class="team-member-photo">
+           <img
+             src="https://avatars.githubusercontent.com/u/134307?u=c3083d33a74e974bc69ff3477f6f72bff2126a6b&v=4&s=40"
+             loading="lazy"
+             alt="Avatar picture of @ahojnnes"
+           />
+        </div>
+        Johannes Schönberger
+     </a>
+     <div class="team-member-handle">@ahojnnes</div>
+   </div>
+
+
+.. raw:: html
+
+   <div class="team-member">
+     <a href="https://github.com/alexdesiqueira" class="team-member-name">
+        <div class="team-member-photo">
+           <img
+             src="https://avatars.githubusercontent.com/u/5776022?u=d73123d41fbf598789c6fecd972a6058af2a902f&v=4&s=40"
+             loading="lazy"
+             alt="Avatar picture of @alexdesiqueira"
+           />
+        </div>
+        Alexandre de Siqueira
+     </a>
+     <div class="team-member-handle">@alexdesiqueira</div>
+   </div>
+
+
+.. raw:: html
+
+   <div class="team-member">
+     <a href="https://github.com/amueller" class="team-member-name">
+        <div class="team-member-photo">
+           <img
+             src="https://avatars.githubusercontent.com/u/449558?u=1fae3e7888b9d2812333812f80e91ead9fbfdd3e&v=4&s=40"
+             loading="lazy"
+             alt="Avatar picture of @amueller"
+           />
+        </div>
+        Andreas Mueller
+     </a>
+     <div class="team-member-handle">@amueller</div>
+   </div>
 
 
 .. raw:: html
