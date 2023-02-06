@@ -85,5 +85,7 @@ visit our `gallery </docs/dev/auto_examples>`__.
          :class: coins-sample span6
 
 You can read more in our `user guide </docs/stable/user_guide.html>`__.
+For an introduction to image processing using scikit-image, see
+`this lesson <https://datacarpentry.org/image-processing/>`__ by Data Carpentry.
 
 .. include:: team.rst
