@@ -5,15 +5,6 @@
 
 .. container:: well hero row-fluid summary-box
 
-   .. raw:: html
-
-      <div class="gallery-random">
-        <script src="https://scikit-image.org/docs/dev/_static/random.js"></script>
-        <script type="text/javascript">
-          insert_gallery();
-        </script>
-      </div>
-
       <h2>Image processing in Python</h2>
 
    *scikit-image* is a collection of algorithms for image processing.  It
