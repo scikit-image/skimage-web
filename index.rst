@@ -5,6 +5,8 @@
 
 .. container:: well hero row-fluid summary-box
 
+   .. raw:: html
+
       <h2>Image processing in Python</h2>
 
    *scikit-image* is a collection of algorithms for image processing.  It
