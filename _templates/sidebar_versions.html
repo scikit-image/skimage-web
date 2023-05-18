@@ -6,8 +6,12 @@
   const repo = gh.getRepo('scikit-image', 'scikit-image');
 
   repo.listTags().then(function(response) {
-    let latest_tag = response.data[0];
-    latest_tag = latest_tag.name.includes('rc') ? response.data[1] : latest_tag;
+    let tags = response.data;
+    console.log(tags);
+    tags = tags.filter(tag => tag.name.match('^v\\d+\\.\\d+\\.\\d+$'));
+    console.log(tags);
+
+    let latest_tag = tags[0];
     let sha = latest_tag.commit.sha;
     let stable_version = latest_tag.name.slice(1);
 
