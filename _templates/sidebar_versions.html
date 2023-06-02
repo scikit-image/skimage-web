@@ -1,52 +1,52 @@
 <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
-<script type="text/javascript">
-  const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+<script type="module">
+ import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
 
-  const gh = new GitHub();
-  const repo = gh.getRepo('scikit-image', 'scikit-image');
+ const octokit = new Octokit();
 
-  repo.listTags().then(function(response) {
-    let tags = response.data;
-    console.log(tags);
-    tags = tags.filter(tag => tag.name.match('^v\\d+\\.\\d+\\.\\d+$'));
-    console.log(tags);
+ const releases = await octokit.rest.repos.listReleases({
+   owner: 'scikit-image',
+   repo: 'scikit-image',
+   per_page: 1,
+   page: 1
+ });
 
-    let latest_tag = tags[0];
-    let sha = latest_tag.commit.sha;
-    let stable_version = latest_tag.name.slice(1);
+ const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    repo.getCommit(sha).then(function(response) {
-      let date = response.data.author.date;
-      let year = date.substring(0, 4);
-      let month = date.substring(5, 7);
-      let day = date.substring(8, 10);
+ let release = releases.data[0];
+ let tag = release.tag_name;
+ let stable_version = tag.slice(1);
 
-      $('#stable-version').html(stable_version + " - "
-                                + month_names[parseInt(month)-1] + " " + year);
-      var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
-      var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".rst";
-      $('#release-notes').attr('href', release_notes_url);
+ let date = release.published_at;
+ let year = date.substring(0, 4);
+ let month = date.substring(5, 7);
+ let day = date.substring(8, 10);
 
-      var dev_version = stable_version.split(".").map(Number);
-      dev_version[1] += 1;
-      dev_version = dev_version.slice(0, 2).join(".");
+ $('#stable-version').html(
+   stable_version + " - " + month_names[parseInt(month)-1] + " " + year
+ );
+ var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
+ var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".rst";
+ $('#release-notes').attr('href', release_notes_url);
 
-      $('#dev-version').html("pre-" + dev_version);
-    });
-  });
+ var dev_version = stable_version.split(".").map(Number);
+ dev_version[1] += 1;
+ dev_version = dev_version.slice(0, 2).join(".");
+
+ $('#dev-version').html("pre-" + dev_version);
 </script>
 
 
 <div class="well">
     <strong>Stable</strong>
-    (<a href="https://github.com/scikit-image/scikit-image/tree/master/doc/release" id="release-notes">release notes</a>)
+    (<a href="https://github.com/scikit-image/scikit-image/tree/master/doc/source/release_notes" id="release-notes">release notes</a>)
     <p id="stable-version"/>x.y.z</p>
 
-    <a class="btn btn-small" href="https://scikit-image.org/docs/stable/install.html"><i class="icon-download"></i> Download</a>
+    <a class="btn btn-small" href="https://scikit-image.org/docs/stable/user_guide/install.html#installation-via-pip-and-conda"><i class="icon-download"></i> Download</a>
     <strong><br></strong>
 
     <br/>
     <strong>Development</strong>
     <p id="dev-version">pre-x.y.z</p>
-    <a class="btn btn-small" href="https://github.com/scikit-image/scikit-image#installation-from-source"><i class="icon-download"></i> Download</a>
+    <a class="btn btn-small" href="https://scikit-image.org/docs/stable/user_guide/install.html#installing-scikit-image-for-contributors"><i class="icon-download"></i> Download</a>
 </div>
