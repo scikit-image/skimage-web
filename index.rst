@@ -52,8 +52,8 @@
 News
 ----
 
-- **Release!** Version 0.21.0 2023-06-02
-- **Release!** Version 0.20.0 2023-02-28
+- **Release!** `Version 0.21.0 <https://scikit-image.org/docs/stable/release_notes/release_0.21.html>`_ 2023-06-02
+- **Release!** `Version 0.20.0 <https://scikit-image.org/docs/0.20.x/release_notes.html>`_ 2023-02-28
 - `scikit-image selected for third round of funding by CZI
   <https://chanzuckerberg.com/eoss/proposals/?cycle=5>`__ 2022-11-30
 
