@@ -18,4 +18,4 @@ through our GitHub profiles).  We are committed to making this community a
 safe and welcoming space.
 
 You can learn more about contributing to scikit-image at
-https://scikit-image.org/docs/stable/contribute.html.
+https://scikit-image.org/docs/stable/development/contribute.html.
