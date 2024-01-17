@@ -1,0 +1,73 @@
+baseURL: "https://scikit-image.org/"
+languageCode: "en-us"
+title: "scikit-image"
+theme: scientific-python-hugo-theme
+relativeURLs: true
+disableKinds: ["taxonomy"]
+
+markup:
+  highlight:
+    noClasses: false
+
+params:
+  author:
+    name: "Scientific Python team"
+  description: "Image processing in Python."
+  images:
+    - /images/logo.png
+  navbarlogo:
+    image: logo.png
+    text: scikit-image
+    link: /
+  hero:
+    title: scikit-image
+    image: logo.png
+    buttontext: Get Started
+    buttonlink: /docs/stable/user_guide/
+  navbar:
+    - title: Installation
+      url: /docs/stable/user_guide/install.html
+    - title: Gallery
+      url: /docs/stable/auto_examples
+    - title: Documentation
+      url: /docs/stable
+    - title: Community
+      url: /community_guidelines/
+  keyfeatures:
+    features:
+      - title: Image processing in Python
+        text: High-quality, peer-reviewed image processing algorithms applicable in a wide range of scientific domains.
+      - title: Easy to use
+        text: An expressive, consistent API written in high-level Python. Install in any Python environment or find us in your favorite scientific Python distribution.
+      - title: Performant
+        text: Wraps highly-optimized implementations written in low-level languages like C, and C++. Enjoy the flexibility of Python with the speed of compiled code.
+      - title: Ecosystem Integration
+        text: Builds on NumPy, SciPy and other packages. Images are just NumPy arrays!
+      - title: Open source and community
+        text: Developed in the open by an active community of volunteers. Available under the liberal [BSD-3-Clause license](https://scikit-image.org/docs/dev/license.html). 
+      - title: Cite us
+        text: "If you have found scikit-image useful, you can cite us: [BiBTeX](/skimage.bib)! Or find the publication here: [10.7717/peerj.453](https://doi.org/10.7717/peerj.453)"
+  footer:
+    logo: logo.png
+    socialmediatitle: "Connect"
+    socialmedia:
+      - link: https://github.com/scikit-image/scikit-image
+        icon: github
+    quicklinks:
+      column1:
+        title: ""
+        links:
+          - text: GitHub
+            link: https://github.com/scikit-image/scikit-image
+          - text: Contribute
+            link: https://scikit-image.org/docs/stable/development/contribute.html
+          - text: Get Help
+            link: https://forum.image.sc/tags/scikit-image
+          - text: Discuss
+            link: https://discuss.scientific-python.org/c/contributor/skimage
+      column2:
+        links:
+          - text: Scientific Python Forum
+            link: https://discuss.scientific-python.org
+      column3:
+        links:

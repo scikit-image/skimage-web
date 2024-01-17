@@ -1,10 +1,8 @@
-:orphan:
+---
+title: Community Guidelines
+---
 
-Community Guidelines
-====================
-
-or How We Work (Together)
--------------------------
+**or How We Work (Together)**
 
 We welcome each and every contributor to scikit-image.  Our aim is
 enthusiastic and productive collaboration, to build an excellent
@@ -18,4 +16,4 @@ through our GitHub profiles).  We are committed to making this community a
 safe and welcoming space.
 
 You can learn more about contributing to scikit-image at
-https://scikit-image.org/docs/stable/development/contribute.html.
+[How to contribute to scikit-image](https://scikit-image.org/docs/stable/development/contribute.html).
