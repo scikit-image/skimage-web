@@ -4,3 +4,6 @@ gh-pages
 *.pyc
 *~
 \.#*
+
+.hugo_build.lock
+/resources/_gen/
