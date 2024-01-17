@@ -3,13 +3,15 @@ languageCode: "en-us"
 title: "scikit-image"
 theme: scientific-python-hugo-theme
 relativeURLs: true
-disableKinds: ["term", "taxonomy"]
+disableKinds: ["taxonomy"]
 
 markup:
   highlight:
     noClasses: false
 
 params:
+  author:
+    name: "Scientific Python team"
   description: "Image processing in Python."
   images:
     - /images/logo.png
@@ -20,6 +22,8 @@ params:
   hero:
     title: scikit-image
     image: logo.png
+    buttontext: Get Started
+    buttonlink: /docs/stable/user_guide/
   navbar:
     - title: Installation
       url: /docs/stable/user_guide/install.html
