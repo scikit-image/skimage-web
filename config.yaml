@@ -32,7 +32,7 @@ params:
     - title: Documentation
       url: /docs/stable
     - title: Community
-      url: /community_guidelines.html
+      url: /community_guidelines/
   keyfeatures:
     features:
       - title: Image processing in Python
