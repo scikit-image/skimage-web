@@ -37,12 +37,16 @@ params:
     features:
       - title: Image processing in Python
         text: High-quality, peer-reviewed image processing algorithms applicable in a wide range of scientific domains.
+      - title: Easy to use
+        text: An expressive, consistent API written in high-level Python. Install in any Python environment or find us in your favorite scientific Python distribution.
       - title: Performant
         text: Wraps highly-optimized implementations written in low-level languages like C, and C++. Enjoy the flexibility of Python with the speed of compiled code.
       - title: Ecosystem Integration
         text: Builds on NumPy, SciPy and other packages. Images are just NumPy arrays!
       - title: Open source and community
         text: Developed in the open by an active community of volunteers. Available under the liberal [BSD-3-Clause license](https://scikit-image.org/docs/dev/license.html). 
+      - title: Cite us
+        text: "If you have found scikit-image useful, you can cite us: [BiBTeX](/skimage.bib)! Or find the publication here: [10.7717/peerj.453](https://doi.org/10.7717/peerj.453)"
   footer:
     logo: logo.png
     socialmediatitle: "Connect"
