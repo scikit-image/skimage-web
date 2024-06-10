@@ -22,11 +22,6 @@
    peer-reviewed code, written by an active `community of volunteers
    <https://www.openhub.net/p/scikit-image/contributors>`__.
 
-   .. raw:: html
-
-      <a class="btn btn-warning clearfix" href="/docs/stable/install.html">
-      <i class="icon-download icon-white"></i>Download</a>
-
 .. container:: well hero row-fluid summary-box citation
 
     .. raw:: html
