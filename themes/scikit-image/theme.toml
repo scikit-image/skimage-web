@@ -1,0 +1,9 @@
+[theme]
+inherit = "basic"
+stylesheets = [
+  "pygments.css",
+  "css/bootstrap.min.css",
+  "css/theme.css",
+  "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+]
+pygments_style = { default = "default" }
