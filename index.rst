@@ -47,6 +47,7 @@
 News
 ----
 
+- **Release!** `Version 0.26.0 <https://scikit-image.org/docs/stable/release_notes/release_0.26.html>`__ 2025-12-20
 - **Release!** `Version 0.25.2 <https://scikit-image.org/docs/stable/release_notes/release_0.25.html>`__ 2025-02-18
 - **Release!** `Version 0.24.0 <https://scikit-image.org/docs/stable/release_notes/release_0.24.html>`__ 2024-06-18
 - **Release!** `Version 0.23.2 <https://scikit-image.org/docs/stable/release_notes/release_0.23.html>`__ 2024-04-20
