@@ -82,31 +82,29 @@ Sphinx layout template for the scikit-image theme
     <!-- Skip to main content link for accessibility -->
     <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
 
-    <div class="container-fluid">
+    <div class="container">
         <header>
             <a href="https://scikit-image.org" class="logo" aria-label="scikit-image home">
                 <img src="{{ pathto('_static/', 1) }}img/logo.png" alt="scikit-image logo">
             </a>
 
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light" aria-label="Main navigation">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto">
-                            {% include 'navbar.html' %}
-                        </ul>
-                        <form class="d-flex search-form" action="/docs/stable/search.html" method="get" role="search">
-                            <input class="form-control me-2" type="search" name="q" placeholder="Search documentation..."
-                                   aria-label="Search documentation">
-                            <input type="hidden" name="check_keywords" value="yes">
-                            <input type="hidden" name="area" value="default">
-                            <button class="btn btn-outline-primary" type="submit">Search</button>
-                        </form>
-                    </div>
+            <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        {% include 'navbar.html' %}
+                    </ul>
+                    <form class="d-flex search-form" action="/docs/stable/search.html" method="get" role="search">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search documentation..."
+                               aria-label="Search documentation">
+                        <input type="hidden" name="check_keywords" value="yes">
+                        <input type="hidden" name="area" value="default">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
                 </div>
             </nav>
         </header>

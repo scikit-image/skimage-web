@@ -171,12 +171,12 @@ pre {
 
 /* Header & Logo */
 header {
-    padding: var(--space-lg) 0;
+    padding: var(--space-lg) 0 0 0;
 }
 
 .logo {
     display: inline-block;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     transition: transform var(--transition-fast);
 }
 
@@ -187,32 +187,40 @@ header {
 .logo img {
     height: 70px;
     width: auto;
+    display: block;
+    /* Remove white background from logo */
+    background: transparent;
 }
 
 /* Navigation */
 nav.navbar {
-    background-color: var(--bg-secondary);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    margin-bottom: var(--space-xl);
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: var(--space-lg);
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
 }
 
 .navbar-nav .nav-link {
-    color: var(--text-primary);
-    padding: var(--space-sm) var(--space-md);
-    transition: background-color var(--transition-fast), color var(--transition-fast);
-    border-radius: var(--radius-sm);
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-    background-color: var(--bg-tertiary);
-    color: var(--link-color);
+.navbar-nav .nav-item:first-child .nav-link {
+    padding-left: 0 !important;
 }
 
-.navbar-nav .nav-link:focus-visible {
-    outline: 2px solid var(--link-color);
-    outline-offset: 2px;
+.navbar-nav .nav-link:hover {
+    color: var(--link-color) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--border-color);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33, 37, 41, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .github-icon {
@@ -226,11 +234,6 @@ nav.navbar {
 /* Search form */
 .search-form {
     min-width: 300px;
-}
-
-.search-form .form-control {
-    border-color: var(--border-color);
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .search-form .form-control:focus {
@@ -254,6 +257,10 @@ nav.navbar {
     background-color: var(--bg-secondary);
 }
 
+.sidebar-box .card-body {
+    padding: var(--space-md);
+}
+
 .sidebar-box .nav-link {
     padding: var(--space-sm) var(--space-md);
     color: var(--text-primary);
@@ -270,9 +277,59 @@ nav.navbar {
     text-decoration: none;
 }
 
-.sidebar-box .nav-link:focus-visible {
-    outline: 2px solid var(--link-color);
-    outline-offset: -2px;
+/* Fix button icon alignment */
+.sidebar-box .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.sidebar-box .btn svg {
+    flex-shrink: 0;
+    margin-top: -2px;
+}
+
+/* Override Bootstrap button colors with brand orange */
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited {
+    --bs-btn-bg: var(--brand-orange);
+    --bs-btn-border-color: var(--brand-orange);
+    --bs-btn-hover-bg: var(--brand-orange-hover);
+    --bs-btn-hover-border-color: var(--brand-orange-hover);
+    --bs-btn-active-bg: var(--brand-orange-hover);
+    --bs-btn-active-border-color: var(--brand-orange-hover);
+    background-color: var(--brand-orange) !important;
+    border-color: var(--brand-orange) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--brand-orange-hover) !important;
+    border-color: var(--brand-orange-hover) !important;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:link,
+.btn-outline-primary:visited {
+    --bs-btn-color: var(--brand-orange);
+    --bs-btn-border-color: var(--brand-orange);
+    --bs-btn-hover-bg: var(--brand-orange);
+    --bs-btn-hover-border-color: var(--brand-orange);
+    --bs-btn-active-bg: var(--brand-orange);
+    --bs-btn-active-border-color: var(--brand-orange);
+    color: var(--brand-orange) !important;
+    border-color: var(--brand-orange) !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: var(--brand-orange) !important;
+    border-color: var(--brand-orange) !important;
+    color: white !important;
 }
 
 .sidebar-subtitle {
@@ -287,36 +344,66 @@ main {
     min-height: 50vh;
 }
 
+/* Ensure proper spacing before major sections */
+main > div > h2:not(:first-child) {
+    margin-top: var(--space-2xl);
+}
+
 /* Hero section */
 .hero {
-    padding: var(--space-lg);
+    padding: var(--space-lg) var(--space-lg) var(--space-md) var(--space-lg);
     background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     margin-bottom: var(--space-xl);
+    overflow: hidden;
+}
+
+.hero h2:first-of-type {
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    clear: none;
+}
+
+.hero > *:last-child {
+    margin-bottom: 0;
 }
 
 .gallery-random {
     float: right;
-    line-height: 180px;
     margin-left: var(--space-md);
+    margin-bottom: 0;
+    padding: var(--space-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-primary);
+    max-width: calc(180px + 2 * var(--space-md) + 2px);
 }
 
 .gallery-random img {
+    display: block;
     max-height: 180px;
     max-width: 180px;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
     box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-md);
 }
 
 .coins-sample {
     float: left;
     padding: var(--space-sm);
+    margin-bottom: var(--space-md);
 }
 
 .coins-sample img {
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-sm);
+}
+
+/* Clear floats before major sections */
+.section > h2 {
+    clear: both;
 }
 
 .summary-box {
