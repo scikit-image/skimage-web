@@ -35,4 +35,8 @@ jobs:
 workflows:
   build-preview:
     jobs:
-      - build-docs
+      - build-docs:
+          filters:
+            branches:
+              ignore:
+                - main
