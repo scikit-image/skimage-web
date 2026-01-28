@@ -28,10 +28,19 @@ Sphinx layout template for the scikit-image theme
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- block htmltitle %}
     <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
     {%- endblock %}
     {{ metatags }}
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
     {%- block css %}
     {{- css() }}
     {%- endblock %}
@@ -57,12 +66,9 @@ Sphinx layout template for the scikit-image theme
     {%- if prev %}
     <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
     {%- endif %}
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link rel="shortcut icon" href="{{ pathto('_static/', 1) }}favicon.ico">
 </head>
-<body class="container">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="{{ pathto('_static/', 1) }}js/bootstrap.min.js"></script>
+<body>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT: '{{ url_root }}',
@@ -72,37 +78,68 @@ Sphinx layout template for the scikit-image theme
             HAS_SOURCE: {{ has_source| lower }}
               };
     </script>
-    <a href="https://scikit-image.org" class="logo"><img src="{{ pathto('_static/', 1) }}img/logo.png" alt=""></a>
-    <div class="clearfix"></div>
-    <div class="navbar">
-        <div class="navbar-inner">
-            <ul class="nav">
-                {% include 'navbar.html' %}
-            </ul>
-            <form class="navbar-form pull-right" action="/docs/stable/search.html" method="get">
-                <input type="text" class="search span3" name="q" placeholder="Search documentation ...">
-                <input type="hidden" name="check_keywords" value="yes" >
-                <input type="hidden" name="area" value="default" >
-            </form>
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
+
+    <div class="container-fluid">
+        <header>
+            <a href="https://scikit-image.org" class="logo" aria-label="scikit-image home">
+                <img src="{{ pathto('_static/', 1) }}img/logo.png" alt="scikit-image logo">
+            </a>
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light" aria-label="Main navigation">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            {% include 'navbar.html' %}
+                        </ul>
+                        <form class="d-flex search-form" action="/docs/stable/search.html" method="get" role="search">
+                            <input class="form-control me-2" type="search" name="q" placeholder="Search documentation..."
+                                   aria-label="Search documentation">
+                            <input type="hidden" name="check_keywords" value="yes">
+                            <input type="hidden" name="area" value="default">
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main content area -->
+        <div class="row g-4">
+            <aside class="col-lg-3 sidebar" aria-label="Sidebar navigation">
+                {%- for sidebartemplate in sidebars %}
+                    {%- include sidebartemplate %}
+                {%- endfor %}
+            </aside>
+            <main class="col-lg-9" id="main-content" tabindex="-1">
+                {% block body %}{% endblock %}
+            </main>
         </div>
-    </div>
-    <div class="row">
-        <div class="span3">
-            {%- for sidebartemplate in sidebars %}
-                {%- include sidebartemplate %}
-            {%- endfor %}
-        </div>
-        <div class="span9">
-            {% block body %}{% endblock %}
-        </div>
-    </div>
-    <div class="well footer">
-        <small>
-            &copy; Copyright the scikit-image development team.
-            Created using <a href="https://twitter.github.com/bootstrap/">Bootstrap</a> and <a href="https://sphinx.pocoo.org/">Sphinx</a>.
-        </small>
+
+        <!-- Footer -->
+        <footer class="footer mt-5">
+            <small>
+                &copy; Copyright the scikit-image development team.
+                Created using <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://sphinx.pocoo.org/">Sphinx</a>.
+            </small>
+        </footer>
     </div>
 
-    <div class="chatbutton"><a href="https://skimage.zulipchat.com">Open Chat</a></div>
+    <!-- Chat button -->
+    <div class="chatbutton">
+        <a href="https://skimage.zulipchat.com" aria-label="Open Zulip chat">Open Chat</a>
+    </div>
+
+    <!-- Bootstrap 5.3.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 </html>
