@@ -12,5 +12,6 @@ jobs:
       - uses: scientific-python/circleci-artifacts-redirector-action@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          api-token: ${{ secrets.CIRCLECI_ARTIFACT_REDIRECTOR_TOKEN }}
           artifact-path: 0/_build/html/index.html
           circleci-jobs: build-docs
