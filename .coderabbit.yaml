@@ -1,0 +1,11 @@
+reviews:
+  profile: "chill" # "assertive" — more nitpicky
+  review_status: false
+  review_details: false
+  high_level_summary: false
+  estimate_code_review_effort: true
+  in_progress_fortune: false
+  poem: false
+  auto_review:
+    base_branches:
+      - main
