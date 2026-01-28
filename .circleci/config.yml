@@ -1,0 +1,38 @@
+version: 2.1
+
+jobs:
+  build-docs:
+    docker:
+      - image: cimg/python:3.12
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - pip-cache-v1-{{ checksum "conf.py" }}
+            - pip-cache-v1-
+
+      - run:
+          name: Install dependencies
+          command: |
+            python -m pip install --upgrade pip
+            pip install sphinx
+
+      - save_cache:
+          key: pip-cache-v1-{{ checksum "conf.py" }}
+          paths:
+            - ~/.cache/pip
+
+      - run:
+          name: Build docs
+          command: |
+            make html
+
+      - store_artifacts:
+          path: _build/html
+
+workflows:
+  build-preview:
+    jobs:
+      - build-docs
