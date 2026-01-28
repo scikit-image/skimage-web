@@ -1,0 +1,16 @@
+name: CircleCI artifact redirector
+
+on:
+  status: {}
+
+jobs:
+  circleci_artifact_redirector:
+    runs-on: ubuntu-latest
+    if: github.event.context == 'ci/circleci: build-docs'
+
+    steps:
+      - uses: scientific-python/circleci-artifacts-redirector-action@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          artifact-path: 0/_build/html/index.html
+          circleci-jobs: build-docs
