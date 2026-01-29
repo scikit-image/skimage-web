@@ -120,12 +120,12 @@ Sphinx layout template for the scikit-image theme
 
         <!-- Main content area -->
         <div class="row g-4">
-            <aside class="col-lg-3 sidebar" aria-label="Sidebar navigation">
+            <aside class="col-lg-3 sidebar order-2 order-lg-1" aria-label="Sidebar navigation">
                 {%- for sidebartemplate in sidebars %}
                     {%- include sidebartemplate %}
                 {%- endfor %}
             </aside>
-            <main class="col-lg-9" id="main-content" tabindex="-1">
+            <main class="col-lg-9 order-1 order-lg-2" id="main-content" tabindex="-1">
                 {% block body %}{% endblock %}
             </main>
         </div>
