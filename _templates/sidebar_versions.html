@@ -17,31 +17,30 @@
    });
 
    const release = releases.data.filter(notRc)[0];
-   if (!release) {
+   if (release) {
+     const tag = release.tag_name;
+     const stable_version = tag.slice(1);
+
+     const date = release.published_at;
+     const year = date.substring(0, 4);
+     const month = date.substring(5, 7);
+
+     document.getElementById('stable-version').textContent =
+       stable_version + " - " + month_names[parseInt(month)-1] + " " + year;
+
+     const stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
+     const releaseNotesLink = document.getElementById('release-notes');
+     const release_notes_url = releaseNotesLink.getAttribute('href') + "/release_" + stable_version_majmin + ".rst";
+     releaseNotesLink.setAttribute('href', release_notes_url);
+
+     let dev_version = stable_version.split(".").map(Number);
+     dev_version[1] += 1;
+     dev_version = dev_version.slice(0, 2).join(".");
+
+     document.getElementById('dev-version').textContent = "pre-" + dev_version;
+   } else {
      console.warn('No non-RC releases found');
-     return;
    }
-
-   const tag = release.tag_name;
-   const stable_version = tag.slice(1);
-
-   const date = release.published_at;
-   const year = date.substring(0, 4);
-   const month = date.substring(5, 7);
-
-   document.getElementById('stable-version').textContent =
-     stable_version + " - " + month_names[parseInt(month)-1] + " " + year;
-
-   const stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
-   const releaseNotesLink = document.getElementById('release-notes');
-   const release_notes_url = releaseNotesLink.getAttribute('href') + "/release_" + stable_version_majmin + ".rst";
-   releaseNotesLink.setAttribute('href', release_notes_url);
-
-   let dev_version = stable_version.split(".").map(Number);
-   dev_version[1] += 1;
-   dev_version = dev_version.slice(0, 2).join(".");
-
-   document.getElementById('dev-version').textContent = "pre-" + dev_version;
  } catch (error) {
    console.error('Failed to fetch release information:', error);
  }

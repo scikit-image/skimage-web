@@ -74,6 +74,15 @@
         --table-border: #495057;
         --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
         --shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+
+        /* Logo colors */
+        --logo-title: #e9ecef;
+        --logo-tagline: #adb5bd;
+
+        /* Citation colors */
+        --citation-text: #9ec5fe;
+        --citation-bg: #1c2a3a;
+        --citation-border: #2c5282;
     }
 }
 
@@ -213,7 +222,7 @@ header {
     font-family: 'Ubuntu', var(--font-family-sans);
     font-size: 2.2rem;
     font-weight: 300;
-    color: #333;
+    color: var(--logo-title);
     line-height: 1.1;
 }
 
@@ -221,17 +230,7 @@ header {
     font-family: 'Ubuntu', var(--font-family-sans);
     font-size: 1rem;
     font-weight: 300;
-    color: #666;
-}
-
-@media (prefers-color-scheme: dark) {
-    .logo-title {
-        color: #e9ecef;
-    }
-
-    .logo-tagline {
-        color: #adb5bd;
-    }
+    color: var(--logo-tagline);
 }
 
 /* Navigation */
@@ -473,19 +472,11 @@ main > div > h2:not(:first-child) {
 
 /* Citation box */
 .citation {
-    color: #004085;
-    background-color: #cce5ff;
-    border-color: #b8daff;
-    border-left: 4px solid #007bff;
+    color: var(--citation-text);
+    background-color: var(--citation-bg);
+    border-color: var(--citation-border);
+    border-left: 4px solid var(--citation-accent);
     padding: var(--space-lg);
-}
-
-@media (prefers-color-scheme: dark) {
-    .citation {
-        color: #9ec5fe;
-        background-color: #1c2a3a;
-        border-color: #2c5282;
-    }
 }
 
 /* Permalink/headerlink */
