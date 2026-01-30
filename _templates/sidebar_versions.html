@@ -16,8 +16,8 @@
      page: 1
    });
 
-   const release = releases.data.filter(notRc)[0];
-   if (release) {
+   const release = releases.data.find(r => !r.draft && !r.prerelease && notRc(r));
+   if (release && release.published_at) {
      const tag = release.tag_name;
      const stable_version = tag.slice(1);
 
@@ -39,7 +39,7 @@
 
      document.getElementById('dev-version').textContent = "pre-" + dev_version;
    } else {
-     console.warn('No non-RC releases found');
+     console.warn('No eligible non-RC releases found');
    }
  } catch (error) {
    console.error('Failed to fetch release information:', error);
