@@ -2,42 +2,49 @@
  import { Octokit } from "https://esm.sh/octokit";
 
  const octokit = new Octokit();
+ const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
  function notRc(release) {
    return !release.tag_name.includes('rc');
  }
 
- const releases = await octokit.rest.repos.listReleases({
-   owner: 'scikit-image',
-   repo: 'scikit-image',
-   per_page: 5,
-   page: 1
- });
+ try {
+   const releases = await octokit.rest.repos.listReleases({
+     owner: 'scikit-image',
+     repo: 'scikit-image',
+     per_page: 5,
+     page: 1
+   });
 
- const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+   const release = releases.data.filter(notRc)[0];
+   if (!release) {
+     console.warn('No non-RC releases found');
+     return;
+   }
 
- let release = releases.data.filter(notRc)[0];
- let tag = release.tag_name;
- let stable_version = tag.slice(1);
+   const tag = release.tag_name;
+   const stable_version = tag.slice(1);
 
- let date = release.published_at;
- let year = date.substring(0, 4);
- let month = date.substring(5, 7);
- let day = date.substring(8, 10);
+   const date = release.published_at;
+   const year = date.substring(0, 4);
+   const month = date.substring(5, 7);
 
- document.getElementById('stable-version').textContent =
-   stable_version + " - " + month_names[parseInt(month)-1] + " " + year;
+   document.getElementById('stable-version').textContent =
+     stable_version + " - " + month_names[parseInt(month)-1] + " " + year;
 
- var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
- var releaseNotesLink = document.getElementById('release-notes');
- var release_notes_url = releaseNotesLink.getAttribute('href') + "/release_" + stable_version_majmin + ".rst";
- releaseNotesLink.setAttribute('href', release_notes_url);
+   const stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
+   const releaseNotesLink = document.getElementById('release-notes');
+   const release_notes_url = releaseNotesLink.getAttribute('href') + "/release_" + stable_version_majmin + ".rst";
+   releaseNotesLink.setAttribute('href', release_notes_url);
 
- var dev_version = stable_version.split(".").map(Number);
- dev_version[1] += 1;
- dev_version = dev_version.slice(0, 2).join(".");
+   let dev_version = stable_version.split(".").map(Number);
+   dev_version[1] += 1;
+   dev_version = dev_version.slice(0, 2).join(".");
 
- document.getElementById('dev-version').textContent = "pre-" + dev_version;
+   document.getElementById('dev-version').textContent = "pre-" + dev_version;
+ } catch (error) {
+   console.error('Failed to fetch release information:', error);
+ }
 </script>
 
 

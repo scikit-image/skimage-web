@@ -24,6 +24,16 @@
     --chat-bg: #36bc98;
     --chat-hover: #3ea07f;
 
+    /* Logo colors */
+    --logo-title: #333333;
+    --logo-tagline: #666666;
+
+    /* Citation colors */
+    --citation-text: #004085;
+    --citation-bg: #cce5ff;
+    --citation-border: #b8daff;
+    --citation-accent: #007bff;
+
     /* Typography */
     --font-family-sans: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-family-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
