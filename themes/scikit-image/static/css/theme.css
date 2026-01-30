@@ -582,7 +582,16 @@ h6:hover .headerlink {
 .footer-social {
     flex: 1;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
+    gap: var(--space-md);
+}
+
+.footer-social-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: right;
+    line-height: 1.4;
 }
 
 .footer-social a {
@@ -613,7 +622,7 @@ h6:hover .headerlink {
     padding: var(--space-md) var(--space-lg);
     position: fixed;
     bottom: 0;
-    right: 10%;
+    right: 1rem;
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -844,7 +853,6 @@ p.admonition-title {
     }
 
     .chatbutton {
-        right: 5%;
         padding: var(--space-sm) var(--space-md);
     }
 
@@ -879,9 +887,13 @@ p.admonition-title {
     }
 
     .chatbutton {
-        right: 2%;
-        left: 2%;
+        right: 1em;
+        left: 1em;
         text-align: center;
+    }
+
+    .footer {
+        padding-bottom: 4rem;
     }
 }
 
