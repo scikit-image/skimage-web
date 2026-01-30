@@ -553,12 +553,20 @@ h6:hover .headerlink {
 }
 
 .chatbutton a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     color: white;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 0.05em;
+}
+
+.chatbutton-logo {
+    width: 24px;
+    height: 24px;
 }
 
 .chatbutton a:hover,
