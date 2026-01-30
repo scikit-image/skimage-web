@@ -93,7 +93,7 @@ Sphinx layout template for the scikit-image theme
                 <img src="{{ pathto('_static/', 1) }}img/logo.png" alt="">
                 <span class="logo-text">
                     <span class="logo-title">scikit-image</span>
-                    <span class="logo-tagline">image processing in python</span>
+                    <span class="logo-tagline">Image processing in Python</span>
                 </span>
             </a>
 
@@ -132,10 +132,26 @@ Sphinx layout template for the scikit-image theme
 
         <!-- Footer -->
         <footer class="footer mt-5">
-            <small>
-                &copy; Copyright the scikit-image development team.
-                Created using <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://sphinx.pocoo.org/">Sphinx</a>.
-            </small>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="https://scikit-image.org" class="footer-logo" aria-label="scikit-image home">
+                        <img src="{{ pathto('_static/', 1) }}img/logo.png" alt="" width="40" height="40">
+                        <span>scikit-image</span>
+                    </a>
+                    <p class="footer-tagline">Image processing in Python</p>
+                </div>
+
+                <div class="footer-meta">
+                    <small>&copy; scikit-image development team. Built with <a href="https://sphinx.pocoo.org/">Sphinx</a>.</small>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://scientific-python.org" aria-label="Scientific Python" title="Scientific Python">
+                        <img src="https://cdn.jsdelivr.net/gh/scientific-python/scientific-python.org@main/static/images/logo.svg"
+                             alt="Scientific Python" height="45">
+                    </a>
+                </div>
+            </div>
         </footer>
     </div>
 

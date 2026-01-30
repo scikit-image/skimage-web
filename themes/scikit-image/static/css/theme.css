@@ -513,21 +513,96 @@ h6:hover .headerlink {
 /* Footer */
 .footer {
     margin-top: var(--space-2xl);
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-xl) var(--space-md);
     color: var(--text-muted);
     border-top: 1px solid var(--border-color);
     background-color: var(--bg-secondary);
     border-radius: var(--radius-md);
 }
 
-.footer a {
-    color: var(--text-secondary);
-    text-decoration: underline;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
 }
 
-.footer a:hover,
-.footer a:focus {
+.footer-brand {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.footer-logo:hover {
     color: var(--link-color);
+    text-decoration: none;
+}
+
+.footer-logo img {
+    border-radius: var(--radius-sm);
+}
+
+.footer-tagline {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.footer-meta {
+    flex: 1;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.footer-meta a {
+    color: var(--text-secondary);
+}
+
+.footer-meta a:hover,
+.footer-meta a:focus {
+    color: var(--link-color);
+}
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-social a {
+    transition: opacity var(--transition-fast);
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+    opacity: 0.8;
+}
+
+.footer-social svg {
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
 }
 
 /* Chat button */
