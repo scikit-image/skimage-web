@@ -25,7 +25,7 @@
  let month = date.substring(5, 7);
  let day = date.substring(8, 10);
 
- document.getElementById('stable-version').innerHTML =
+ document.getElementById('stable-version').textContent =
    stable_version + " - " + month_names[parseInt(month)-1] + " " + year;
 
  var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
@@ -37,7 +37,7 @@
  dev_version[1] += 1;
  dev_version = dev_version.slice(0, 2).join(".");
 
- document.getElementById('dev-version').innerHTML = "pre-" + dev_version;
+ document.getElementById('dev-version').textContent = "pre-" + dev_version;
 </script>
 
 
