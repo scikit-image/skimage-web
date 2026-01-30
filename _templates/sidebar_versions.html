@@ -1,56 +1,75 @@
-<script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
 <script type="module">
  import { Octokit } from "https://esm.sh/octokit";
 
  const octokit = new Octokit();
+ const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
  function notRc(release) {
    return !release.tag_name.includes('rc');
  }
 
- const releases = await octokit.rest.repos.listReleases({
-   owner: 'scikit-image',
-   repo: 'scikit-image',
-   per_page: 5,
-   page: 1
- });
+ try {
+   const releases = await octokit.rest.repos.listReleases({
+     owner: 'scikit-image',
+     repo: 'scikit-image',
+     per_page: 5,
+     page: 1
+   });
 
- const month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+   const release = releases.data.find(r => !r.draft && !r.prerelease && notRc(r));
+   if (release && release.published_at) {
+     const tag = release.tag_name;
+     const stable_version = tag.slice(1);
 
- let release = releases.data.filter(notRc)[0];
- let tag = release.tag_name;
- let stable_version = tag.slice(1);
+     const date = release.published_at;
+     const year = date.substring(0, 4);
+     const month = date.substring(5, 7);
 
- let date = release.published_at;
- let year = date.substring(0, 4);
- let month = date.substring(5, 7);
- let day = date.substring(8, 10);
+     document.getElementById('stable-version').textContent =
+       stable_version + " - " + month_names[parseInt(month)-1] + " " + year;
 
- $('#stable-version').html(
-   stable_version + " - " + month_names[parseInt(month)-1] + " " + year
- );
- var stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
- var release_notes_url = $('#release-notes').attr('href') + "/release_" + stable_version_majmin + ".rst";
- $('#release-notes').attr('href', release_notes_url);
+     const stable_version_majmin = stable_version.split(".").slice(0,2).join(".");
+     const releaseNotesLink = document.getElementById('release-notes');
+     const release_notes_url = releaseNotesLink.getAttribute('href') + "/release_" + stable_version_majmin + ".rst";
+     releaseNotesLink.setAttribute('href', release_notes_url);
 
- var dev_version = stable_version.split(".").map(Number);
- dev_version[1] += 1;
- dev_version = dev_version.slice(0, 2).join(".");
+     let dev_version = stable_version.split(".").map(Number);
+     dev_version[1] += 1;
+     dev_version = dev_version.slice(0, 2).join(".");
 
- $('#dev-version').html("pre-" + dev_version);
+     document.getElementById('dev-version').textContent = "pre-" + dev_version;
+   } else {
+     console.warn('No eligible non-RC releases found');
+   }
+ } catch (error) {
+   console.error('Failed to fetch release information:', error);
+ }
 </script>
 
 
-<div class="well">
-    <strong>Stable</strong>
-    (<a href="https://github.com/scikit-image/scikit-image/tree/main/doc/source/release_notes" id="release-notes">release notes</a>)
-    <p id="stable-version"/>x.y.z</p>
+<div class="card sidebar-box">
+    <div class="card-body">
+        <strong>Stable</strong>
+        (<a href="https://github.com/scikit-image/scikit-image/tree/main/doc/source/release_notes" id="release-notes">release notes</a>)
+        <p id="stable-version">x.y.z</p>
 
-    <a class="btn btn-small" href="https://scikit-image.org/docs/stable/user_guide/install.html#installation-via-pip-and-conda"><i class="icon-download"></i> Download</a>
-    <strong><br></strong>
+        <a class="btn btn-sm btn-primary" href="https://scikit-image.org/docs/stable/user_guide/install.html#installation-via-pip-and-conda">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            Download
+        </a>
 
-    <br/>
-    <strong>Development</strong>
-    <p id="dev-version">pre-x.y.z</p>
-    <a class="btn btn-small" href="https://scikit-image.org/docs/stable/user_guide/install.html#installing-scikit-image-for-contributors"><i class="icon-download"></i> Download</a>
+        <br/><br/>
+        <strong>Development</strong>
+        <p id="dev-version">pre-x.y.z</p>
+        <a class="btn btn-sm btn-outline-primary" href="https://scikit-image.org/docs/stable/user_guide/install.html#installing-scikit-image-for-contributors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            Download
+        </a>
+    </div>
 </div>
