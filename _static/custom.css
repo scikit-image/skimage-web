@@ -98,13 +98,16 @@
     }
 }
 
+.hero.summary-box {
+    margin-bottom: var(--space-lg);
+}
+
 .sponsor-box {
     color: var(--sponsor-text);
     background-color: var(--sponsor-bg);
     border-color: var(--sponsor-border);
     border-left: 4px solid var(--sponsor-accent);
     padding: var(--space-lg);
-    margin: var(--space-lg) 0;
 }
 
 .sponsor-box img {
