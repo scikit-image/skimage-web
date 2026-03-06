@@ -28,7 +28,7 @@
 
    |czi_logo| |czi_logo_dark| |nominal_logo| |nominal_logo_dark| |bids_logo| |bids_logo_dark|
 
-   `Reach out <mailto:stefanv@berkeley.edu>`__ out if you would
+   `Reach out <mailto:stefanv@berkeley.edu>`__ if you would
    like to join them in supporting the next generation of open source
    image processing in Python.
 

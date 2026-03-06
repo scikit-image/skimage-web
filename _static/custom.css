@@ -79,7 +79,7 @@
 
 @media (prefers-color-scheme: dark) {
     .only-light { display: none !important; }
-    .only-dark { display: inline !important; }
+    .only-dark { display: inline-block !important; }
 }
 
 :root {
