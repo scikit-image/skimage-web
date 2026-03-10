@@ -24,13 +24,13 @@
 
 .. container:: well hero row-fluid summary-box sponsor-box
 
-   The scikit-image team is hard at work at bringing you **scikit-image v2**, a major overhaul with a cleaner and more intuitive API. We would like to thank our project sponsors:
+   The scikit-image team is hard at work at bringing you **scikit-image v2**, a major overhaul with a cleaner and more intuitive API. We would like to thank our project sponsors,
 
    |czi_logo| |czi_logo_dark| |nominal_logo| |nominal_logo_dark| |bids_logo| |bids_logo_dark|
 
-   `Reach out <mailto:stefanv@berkeley.edu>`__ if you would
-   like to join them in supporting the next generation of open source
-   image processing in Python.
+   as well as our `grassroots contributors <https://opencollective.com/scikit-image#section-top-financial-contributors>`__.
+
+   `Reach out <mailto:stefanv@berkeley.edu>`__ if you would like to join them in supporting the next generation of open source image processing in Python.
 
 .. |czi_logo| image:: _static/czi_logo.svg
    :class: only-light
