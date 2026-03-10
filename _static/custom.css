@@ -73,3 +73,44 @@
         background-color: var(--bg-secondary, #2d2d2d);
     }
 }
+
+/* Sponsor box styles */
+.only-dark { display: none !important; }
+
+@media (prefers-color-scheme: dark) {
+    .only-light { display: none !important; }
+    .only-dark { display: inline-block !important; }
+}
+
+:root {
+    --sponsor-text: #0d652d;
+    --sponsor-bg: #e6f4ea;
+    --sponsor-border: #a8dab5;
+    --sponsor-accent: #1e8e3e;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --sponsor-text: #81c995;
+        --sponsor-bg: #0d3a1f;
+        --sponsor-border: #14592d;
+        --sponsor-accent: #34a853;
+    }
+}
+
+.hero.summary-box {
+    margin-bottom: var(--space-lg);
+}
+
+.sponsor-box {
+    color: var(--sponsor-text);
+    background-color: var(--sponsor-bg);
+    border-color: var(--sponsor-border);
+    border-left: 4px solid var(--sponsor-accent);
+    padding: var(--space-lg);
+}
+
+.sponsor-box img {
+    margin: var(--space-sm) var(--space-xl) var(--space-sm) 0;
+    vertical-align: middle;
+}

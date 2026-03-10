@@ -22,6 +22,46 @@
    peer-reviewed code, written by an active `community of volunteers
    <https://www.openhub.net/p/scikit-image/contributors>`__.
 
+.. container:: well hero row-fluid summary-box sponsor-box
+
+   The scikit-image team is hard at work at bringing you **scikit-image v2**, a major overhaul with a cleaner and more intuitive API. We would like to thank our project sponsors,
+
+   |czi_logo| |czi_logo_dark| |nominal_logo| |nominal_logo_dark| |bids_logo| |bids_logo_dark|
+
+   as well as our `grassroots contributors <https://opencollective.com/scikit-image#section-top-financial-contributors>`__.
+
+   `Reach out <mailto:stefanv@berkeley.edu>`__ if you would like to join them in supporting the next generation of open source image processing in Python.
+
+.. |czi_logo| image:: _static/czi_logo.svg
+   :class: only-light
+   :target: https://chanzuckerberg.com/eoss/
+   :height: 40px
+
+.. |czi_logo_dark| image:: _static/czi_logo_dark.svg
+   :class: only-dark
+   :target: https://chanzuckerberg.com/eoss/
+   :height: 40px
+
+.. |nominal_logo| image:: _static/nominal_logo.svg
+   :class: only-light
+   :target: https://nominal.io/
+   :height: 24px
+
+.. |nominal_logo_dark| image:: _static/nominal_logo_dark.svg
+   :class: only-dark
+   :target: https://nominal.io/
+   :height: 24px
+
+.. |bids_logo| image:: _static/bids_logo.svg
+   :class: only-light
+   :target: https://bids.berkeley.edu/
+   :height: 56px
+
+.. |bids_logo_dark| image:: _static/bids_logo_dark.svg
+   :class: only-dark
+   :target: https://bids.berkeley.edu/
+   :height: 56px
+
 .. container:: well hero row-fluid summary-box citation
 
     .. raw:: html
