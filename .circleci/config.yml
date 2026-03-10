@@ -17,7 +17,7 @@ jobs:
           name: Install dependencies
           command: |
             python -m pip install --upgrade pip
-            pip install sphinx
+            pip install -U sphinx
 
       - save_cache:
           key: pip-cache-v1-{{ checksum "conf.py" }}
