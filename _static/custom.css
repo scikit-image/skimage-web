@@ -74,7 +74,7 @@
     }
 }
 
-/* Sponsor box styles */
+/* Thank you box styles */
 .only-dark { display: none !important; }
 
 @media (prefers-color-scheme: dark) {
@@ -83,18 +83,18 @@
 }
 
 :root {
-    --sponsor-text: #0d652d;
-    --sponsor-bg: #e6f4ea;
-    --sponsor-border: #a8dab5;
-    --sponsor-accent: #1e8e3e;
+    --thank-you-text: #0d652d;
+    --thank-you-bg: #e6f4ea;
+    --thank-you-border: #a8dab5;
+    --thank-you-accent: #1e8e3e;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --sponsor-text: #81c995;
-        --sponsor-bg: #0d3a1f;
-        --sponsor-border: #14592d;
-        --sponsor-accent: #34a853;
+        --thank-you-text: #81c995;
+        --thank-you-bg: #0d3a1f;
+        --thank-you-border: #14592d;
+        --thank-you-accent: #34a853;
     }
 }
 
@@ -102,15 +102,15 @@
     margin-bottom: var(--space-lg);
 }
 
-.sponsor-box {
-    color: var(--sponsor-text);
-    background-color: var(--sponsor-bg);
-    border-color: var(--sponsor-border);
-    border-left: 4px solid var(--sponsor-accent);
+.thank-you-box {
+    color: var(--thank-you-text);
+    background-color: var(--thank-you-bg);
+    border-color: var(--thank-you-border);
+    border-left: 4px solid var(--thank-you-accent);
     padding: var(--space-lg);
 }
 
-.sponsor-box img {
+.thank-you-box img {
     margin: var(--space-sm) var(--space-xl) var(--space-sm) 0;
     vertical-align: middle;
 }

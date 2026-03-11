@@ -22,7 +22,7 @@
    peer-reviewed code, written by an active `community of volunteers
    <https://www.openhub.net/p/scikit-image/contributors>`__.
 
-.. container:: well hero row-fluid summary-box sponsor-box
+.. container:: well hero row-fluid summary-box thank-you-box
 
    The scikit-image team is hard at work at bringing you **scikit-image v2**, a major overhaul with a cleaner and more intuitive API. We would like to thank our project sponsors,
 
