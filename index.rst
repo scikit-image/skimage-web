@@ -29,6 +29,7 @@
    |czi_logo| |czi_logo_dark| |nominal_logo| |nominal_logo_dark| |bids_logo| |bids_logo_dark|
 
    as well as our `grassroots contributors <https://opencollective.com/scikit-image#section-top-financial-contributors>`__.
+   We also thank `JetBrains <https://www.jetbrains.com>`__ for sponsoring Lars's PyCharm license.
 
    `Reach out <mailto:stefanv@berkeley.edu>`__ if you would like to join them in supporting the next generation of open source image processing in Python.
 
