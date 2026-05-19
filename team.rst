@@ -194,6 +194,22 @@ is guided by the following core team:
    </div>
 
 
+.. raw:: html
+
+   <div class="team-member">
+     <a href="https://github.com/blink1073" class="team-member-name">
+        <div class="team-member-photo">
+           <img
+             src="https://avatars.githubusercontent.com/u/2096628?u=2a4822ff8dc6b4f1162c58716d48fdfac08c8601&v=4&s=60"
+             loading="lazy"
+             alt="Avatar picture of @blink1073"
+           />
+        </div>
+        Steven Silvester
+     </a>
+     <div class="team-member-handle">@blink1073</div>
+   </div>
+
 
 Emeritus Developers
 -------------------
@@ -250,23 +266,6 @@ We thank these previously-active core developers for their contributions to scik
         Andreas Mueller
      </a>
      <div class="team-member-handle">@amueller</div>
-   </div>
-
-
-.. raw:: html
-
-   <div class="team-member">
-     <a href="https://github.com/blink1073" class="team-member-name">
-        <div class="team-member-photo">
-           <img
-             src="https://avatars.githubusercontent.com/u/2096628?u=2a4822ff8dc6b4f1162c58716d48fdfac08c8601&v=4&s=60"
-             loading="lazy"
-             alt="Avatar picture of @blink1073"
-           />
-        </div>
-        Steven Silvester
-     </a>
-     <div class="team-member-handle">@blink1073</div>
    </div>
 
 
